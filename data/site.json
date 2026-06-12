@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "birthdayMonthDay": "06-07",
+    "date": "2026.06.07 SUN",
+    "fanart": {
+      "src": "images/hero-fanart.jpg",
+      "alt": { "zh": "轟はじめ生日賀圖", "ja": "轟はじめ誕生日ファンアート" },
+      "artistName": "繪師名稱（請替換）",
+      "artistUrl": "https://x.com/artist_id"
+    },
+    "tags": [
+      { "label": "#ぶんぶんばんちょー", "url": "https://x.com/hashtag/ぶんぶんばんちょー" },
+      { "label": "#はじめ武勇伝", "url": "https://x.com/hashtag/はじめ武勇伝" }
+    ]
+  },
+
+  "news": [
+    {
+      "date": "2026-05-01",
+      "title": { "zh": "應援企劃網站正式公開！", "ja": "応援企画サイトを公開しました！" },
+      "url": ""
+    }
+  ],
+
+  "categories": {
+    "ad":       { "label": { "zh": "應援廣告",   "ja": "応援広告" },         "color": "#ffd028" },
+    "netprint": { "label": { "zh": "netprint",   "ja": "ネットプリント" },   "color": "#9fd8ff" },
+    "yosegaki": { "label": { "zh": "寄せ書き",   "ja": "寄せ書き" },         "color": "#ffc2d4" },
+    "postcard": { "label": { "zh": "免費明信片", "ja": "ポストカード配布" }, "color": "#c8f0c0" }
+  },
+
+  "footer": {
+    "disclaimer": {
+      "zh": "本企劃為粉絲自主舉辦的非官方應援活動，遵守 COVER 株式會社二次創作相關規範，與 COVER 株式會社及 hololive production 無關。所有相關商標與角色版權皆屬 COVER 株式會社所有。",
+      "ja": "本企画はファン有志による非公式の応援活動です。カバー株式会社の二次創作ガイドラインを遵守して運営しており、カバー株式会社および hololive production とは一切関係ありません。関連する商標・キャラクターの著作権はすべてカバー株式会社に帰属します。"
+    },
+    "socials": [
+      { "label": { "zh": "主辦 X：@massugumi_babu", "ja": "主催 X：@massugumi_babu" }, "url": "https://x.com/massugumi_babu" },
+      { "label": { "zh": "轟はじめ X", "ja": "轟はじめ X" }, "url": "https://x.com/todoroki_hajime" },
+      { "label": { "zh": "轟はじめ YouTube", "ja": "轟はじめ YouTube" }, "url": "https://www.youtube.com/@TodorokiHajime" }
+    ],
+    "copyright": {
+      "zh": "© 2026 轟はじめ生誕祭應援企劃（非官方）",
+      "ja": "© 2026 轟はじめ生誕祭応援企画（非公式）"
+    }
+  }
+}
