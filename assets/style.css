@@ -447,7 +447,7 @@ footer a:hover { color: var(--c-bolt); }
 .page-head p { color: var(--c-silver); margin-top: 10px; font-size: 0.95rem; }
 
 /* ===== 響應式 ===== */
-@media (max-width: 940px) {
+@media (max-width: 1024px) {
   nav ul {
     display: none; position: absolute; top: 60px; left: 0; right: 0;
     flex-direction: column; gap: 0; background: var(--c-ink); padding: 8px 0;

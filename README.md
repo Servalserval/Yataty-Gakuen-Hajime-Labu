@@ -161,7 +161,7 @@ python3 -m http.server
 > ⚠️ `data/site.json` 的 `debutDate` 目前填 2023-09-10，**請確認轟はじめ正確的出道日**，否則「出道後第幾天」類的倒數會算錯。
 
 
-## 番長的回信（主頁區塊）
+## 番長的回信（replies.html）
 はじめ對本企劃的回應放在 `data/replies.json`（陣列，新增一個 {...} 區塊即可）。
 欄位：`url`(原推文)、`date`、`text`(三語)、`image`(可選，放 images/replies/)。
-有資料才會在主頁 Hero 下方顯示「番長的回信」區塊；`[]` 或載入失敗則自動隱藏。
+獨立成 `replies.html`（導覽列可進入）；空陣列時顯示「目前還沒有番長的回信」。
