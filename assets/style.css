@@ -233,6 +233,14 @@ nav a:hover, nav a:focus-visible, nav a.active { border-bottom-color: var(--c-bo
 }
 .empty-hint { color: var(--c-steel); font-size: 0.95rem; }
 
+/* 主頁「看過去的企劃 →」連結 */
+.see-past { text-align: right; margin-top: 20px; }
+.see-past a {
+  font-size: 0.88rem; color: var(--c-steel); text-decoration: none;
+  border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s;
+}
+.see-past a:hover { color: var(--c-bolt-deep); border-bottom-color: var(--c-bolt); }
+
 /* 單張封面圖 */
 .project-photo { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
 

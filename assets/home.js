@@ -41,15 +41,17 @@ function renderHome() {
   });
 
   // 前往「進行中的企劃」頁的入口按鈕文字
-  const cta = document.getElementById("ongoing-cta");
-  if (cta) cta.textContent = s("nav_ongoing") + " →";
+  // 進行中的企劃（卡片直接顯示在主頁；過去的企劃在 past.html）
+  const ongoing = PROJECTS.filter(p => !isPast(p))
+                          .sort((a, b) => (a.end ?? "9999") < (b.end ?? "9999") ? -1 : 1);
+  const og = document.getElementById("ongoing-grid");
+  og.textContent = "";
+  if (ongoing.length) ongoing.forEach(p => og.append(buildProjectCard(p, false)));
+  else og.append(el("p", { class: "empty-hint" }, s("empty_ongoing")));
 
-  // 過去的企劃（進行中的企劃在 ongoing.html）
-  const past = PROJECTS.filter(isPast).sort((a, b) => (a.end < b.end ? 1 : -1));
-  const pg = document.getElementById("past-grid");
-  pg.textContent = "";
-  document.getElementById("past").style.display = past.length ? "" : "none";
-  past.forEach(p => pg.append(buildProjectCard(p, true)));
+  // 「看過去的企劃 →」連結
+  const seePast = document.getElementById("see-past-link");
+  if (seePast) seePast.textContent = s("see_past") + " →";
 }
 
 async function startHome() {

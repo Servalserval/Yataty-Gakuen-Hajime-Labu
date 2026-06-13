@@ -5,7 +5,7 @@
 ```
 ├── index.html          首頁（Hero、公告、企劃）
 ├── countdown.html      倒數計時頁
-├── ongoing.html        進行中的企劃頁
+├── past.html           過去的企劃頁
 ├── timeline.html       活動年表頁
 ├── fanart.html         ファンアート頁
 ├── about.html          關於我們頁
@@ -18,7 +18,7 @@
 │   ├── common.js         共用：導覽列、頁尾、語言、燈箱、介面文字
 │   ├── home.js           首頁程式
 │   ├── countdown.js      倒數頁程式
-│   ├── ongoing.js        進行中的企劃頁程式
+│   ├── past.js           過去的企劃頁程式
 │   ├── timeline.js       年表頁程式（讀企劃資料自動產生）
 │   ├── fanart.js         ファンアート頁程式
 │   ├── about.js          關於我們頁程式
@@ -143,7 +143,7 @@ python3 -m http.server
 
 ## 頁面結構說明（v5 後續調整）
 - 首頁（index.html）：Hero 標題 → 「到生日還有多久」倒數區塊 → 公告 → 前往進行中企劃的入口 → 過去的企劃。
-- 進行中的企劃獨立成 `ongoing.html`；首頁只放入口按鈕。
+- 進行中的企劃顯示在首頁；過去的企劃獨立成 `past.html`。
 - 生日倒數邏輯（以日本時間）：今年生日已過 → 倒數到明年；生日當天 → 顯示「生日當天」不倒數；隔天起 → 倒數到再下一年。
 - 企劃卡的共用程式（buildProjectCard / isPast / loadProjects / periodText）已集中到 `common.js`，首頁、進行中頁、年表頁共用，改一處即全站生效。
 
