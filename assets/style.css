@@ -13,6 +13,9 @@
   --c-bolt:       #ffd028;  /* 閃電黃（強調色） */
   --c-bolt-deep:  #e6a800;  /* 深黃（hover、連結） */
 
+  --c-lilac:      #ece6f9;  /* 首頁 hero 的淺紫底色 */
+  --c-grape:      #5b3fa0;  /* 深紫（淺紫底上的文字強調色） */
+
   --font-display: "RocknRoll One", "Zen Kaku Gothic New", sans-serif;
   --font-body:    "Zen Kaku Gothic New", "Noto Sans TC", sans-serif;
 
@@ -78,59 +81,59 @@ nav a:hover, nav a:focus-visible, nav a.active { border-bottom-color: var(--c-bo
 .lang-select option { color: #1b1d21; background: #fff; }
 .nav-toggle { display: none; background: none; border: 0; color: var(--c-white); font-size: 1.6rem; cursor: pointer; }
 
-/* ===== Hero（僅首頁用） ===== */
+/* ===== Hero（僅首頁用）：淺紫底 + 閃電符號 ===== */
 .hero {
-  background:
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 14px),
-    linear-gradient(160deg, #2b2f36 0%, #1b1d21 100%);
-  color: var(--c-white);
+  /* 淺紫底色，加上平鋪的閃電符號花紋（深紫、低透明度） */
+  background-color: var(--c-lilac);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cpath d='M42 8 L22 40 L34 40 L30 64 L50 30 L38 30 Z' fill='%238a73c9' fill-opacity='0.16'/%3E%3C/svg%3E");
+  background-size: 72px 72px;
+  color: var(--c-ink);                 /* 淺底 → 文字改深色 */
   text-align: center;
   padding: 84px 20px 96px;
   position: relative; overflow: hidden;
 }
-.hero-kicker { color: var(--c-bolt); letter-spacing: 0.35em; font-size: 0.9rem; margin-bottom: 18px; }
+.hero-kicker { color: var(--c-grape); letter-spacing: 0.35em; font-size: 0.9rem; margin-bottom: 18px; }
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5.5vw, 3.6rem);
   line-height: 1.3;
-  text-shadow: 4px 4px 0 rgba(255, 208, 40, 0.25);
+  color: var(--c-ink);
+  text-shadow: 3px 3px 0 rgba(255, 208, 40, 0.55);   /* 黃色殘影，在淺底上更鮮明 */
 }
-.hero-fanart {
-  margin: 36px auto 0;
-  max-width: min(440px, 86vw);
-  background: var(--c-white);
-  padding: 12px 12px 10px;
-  transform: rotate(-1.5deg);
-  box-shadow: 0 14px 36px rgba(0,0,0,0.45);
-  position: relative; z-index: 1;
-}
-.hero-fanart img { width: 100%; border-radius: 2px; }
-.hero-fanart::before {
-  content: ""; position: absolute; top: -12px; left: 50%;
-  width: 110px; height: 26px; transform: translateX(-50%) rotate(2deg);
-  background: rgba(255, 208, 40, 0.85);
-}
-.fanart-credit { font-size: 0.8rem; color: var(--c-steel); margin-top: 8px; text-align: right; }
-.fanart-credit a { color: var(--c-bolt-deep); text-decoration: none; }
-.fanart-credit a:hover { text-decoration: underline; }
 .hero-date {
   display: inline-block; margin-top: 32px;
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   background: var(--c-bolt); color: var(--c-ink);
   padding: 8px 28px; transform: skewX(-8deg);
+  box-shadow: 0 4px 14px rgba(91, 63, 160, 0.25);
 }
 .countdown { margin-top: 26px; }
-.countdown-label { font-size: 0.9rem; color: var(--c-silver); letter-spacing: 0.15em; }
+.countdown-label { font-size: 0.9rem; color: var(--c-grape); letter-spacing: 0.15em; }
 .countdown-nums { display: flex; gap: 14px; justify-content: center; margin-top: 10px; font-family: var(--font-display); }
 .countdown-nums .unit { text-align: center; }
-.countdown-nums .num { font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--c-bolt); font-variant-numeric: tabular-nums; min-width: 2ch; display: inline-block; }
-.countdown-nums .lbl { font-size: 0.75rem; color: var(--c-silver); }
-.countdown-hbd { font-family: var(--font-display); font-size: clamp(1.4rem, 4vw, 2.2rem); color: var(--c-bolt); margin-top: 10px; }
-.hero-tags { margin-top: 26px; font-size: 0.95rem; color: var(--c-silver); }
-.hero-tags a { color: var(--c-bolt); text-decoration: none; }
+.countdown-nums .num { font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--c-grape); font-variant-numeric: tabular-nums; min-width: 2ch; display: inline-block; }
+.countdown-nums .lbl { font-size: 0.75rem; color: var(--c-steel); }
+.countdown-hbd { font-family: var(--font-display); font-size: clamp(1.4rem, 4vw, 2.2rem); color: var(--c-grape); margin-top: 10px; }
+.hero-tags { margin-top: 26px; font-size: 0.95rem; color: var(--c-steel); }
+.hero-tags a { color: var(--c-grape); text-decoration: none; font-weight: 700; }
 .hero-tags a:hover { text-decoration: underline; }
-.hero-bolt-bg { position: absolute; right: -40px; bottom: -60px; width: 320px; opacity: 0.08; pointer-events: none; }
+/* 角落裝飾用大閃電，改成深紫低透明度 */
+.hero-bolt-bg { position: absolute; right: -40px; bottom: -60px; width: 320px; opacity: 0.1; pointer-events: none; }
+
+/* 加入行事曆按鈕 */
+.hero-cal { margin-top: 20px; }
+.cal-btn {
+  display: inline-block; text-decoration: none;
+  font-size: 0.85rem; font-weight: 700; color: var(--c-grape);
+  border: 1px solid var(--c-grape); border-radius: 999px; padding: 5px 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.cal-btn:hover { background: var(--c-grape); color: var(--c-white); }
+.project-cal { margin-top: 12px; }
+/* 企劃卡內的按鈕用較中性的灰，跟卡片風格一致 */
+.project-cal .cal-btn { color: var(--c-steel); border-color: var(--c-silver); font-weight: 500; }
+.project-cal .cal-btn:hover { background: var(--c-bolt); border-color: var(--c-bolt); color: var(--c-ink); }
 
 /* ===== 公告 ===== */
 .news-list { list-style: none; border-top: 1px solid var(--c-silver); }
@@ -288,6 +291,63 @@ nav a:hover, nav a:focus-visible, nav a.active { border-bottom-color: var(--c-bo
 .staff-name { font-size: 0.92rem; font-weight: 700; }
 .staff-handle { font-size: 0.78rem; color: var(--c-steel); }
 
+/* ===== 活動年表（時間軸） ===== */
+.tl-year { margin-bottom: 44px; }
+.tl-year-label {
+  font-family: var(--font-display); font-size: 1.6rem; color: var(--c-ink);
+  display: inline-block; padding: 2px 18px; margin-bottom: 20px;
+  border-bottom: 4px solid var(--c-bolt);
+}
+.tl-entries {
+  position: relative; padding-left: 28px;
+  border-left: 3px solid var(--c-silver);   /* 時間軸的縱線 */
+}
+.tl-entry {
+  position: relative; display: flex; gap: 16px; align-items: center;
+  padding: 14px 0;
+}
+/* 縱線上的圓點 */
+.tl-entry::before {
+  content: ""; position: absolute; left: -37px; top: 22px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--c-bolt); border: 3px solid var(--c-paper);
+}
+.tl-thumb {
+  width: 84px; height: 56px; object-fit: cover; border-radius: 8px;
+  flex: 0 0 auto; cursor: zoom-in; border: 1px solid var(--c-silver);
+}
+.tl-info { display: flex; flex-direction: column; gap: 3px; }
+.tl-cat {
+  align-self: flex-start; font-size: 0.72rem; font-weight: 700;
+  padding: 1px 10px; border-radius: 999px; color: var(--c-ink);
+}
+.tl-name { font-weight: 700; font-size: 0.98rem; }
+.tl-period { font-size: 0.82rem; color: var(--c-steel); font-variant-numeric: tabular-nums; }
+
+/* ===== 關於我們頁 ===== */
+.about-container { max-width: 760px; }   /* 文章型內容窄一點比較好讀 */
+.about-lead {
+  font-size: 1.15rem; line-height: 1.9;
+  color: var(--c-ink); font-weight: 500;
+  padding-left: 16px; border-left: 5px solid var(--c-bolt);
+  margin-bottom: 40px;
+}
+.about-section { margin-bottom: 36px; }
+.about-section h2 {
+  font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px;
+}
+.about-section h2::before { content: "⚡"; color: var(--c-bolt); }
+.about-section p { font-size: 0.98rem; white-space: pre-line; }
+.about-section p + p { margin-top: 1em; }
+.about-links { margin-top: 8px; display: flex; gap: 12px; flex-wrap: wrap; }
+.about-links a {
+  font-size: 0.9rem; text-decoration: none; font-weight: 700;
+  border: 1px solid var(--c-silver); border-radius: 999px; padding: 6px 18px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.about-links a:hover { background: var(--c-bolt); border-color: var(--c-bolt); }
+
 /* ===== 資料載入失敗提示 ===== */
 .load-error {
   max-width: 640px; margin: 60px auto; padding: 28px 32px;
@@ -303,6 +363,26 @@ footer li + li { margin-top: 8px; }
 footer a { color: var(--c-silver); text-decoration: none; }
 footer a:hover { color: var(--c-bolt); }
 .copyright { border-top: 1px solid #3a3e45; padding-top: 22px; text-align: center; font-size: 0.8rem; color: #8b919b; }
+
+/* 頁尾底部三欄：左訪客數、中版權、右隱私權 */
+.footer-bottom {
+  border-top: 1px solid #3a3e45; margin-top: 8px; padding-top: 18px;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
+}
+.footer-bottom .copyright { border-top: 0; padding-top: 0; margin: 0; }   /* 中欄沿用版權樣式但不重複上框線 */
+.footer-visitors { font-size: 0.78rem; color: #8b919b; justify-self: start; }
+.footer-visitors .v-count { color: var(--c-bolt); font-variant-numeric: tabular-nums; font-weight: 700; }
+.footer-privacy { justify-self: end; font-size: 0.78rem; }
+.footer-privacy a { color: #8b919b; text-decoration: none; }
+.footer-privacy a:hover { color: var(--c-bolt); text-decoration: underline; }
+@media (max-width: 600px) {
+  /* 手機：改成上下堆疊，版權置中 */
+  .footer-bottom { grid-template-columns: 1fr; text-align: center; gap: 8px; }
+  .footer-visitors, .footer-privacy { justify-self: center; }
+}
+.footer-contact { text-align: center; font-size: 0.76rem; color: #8b919b; margin-top: 12px; }
+.footer-contact a { color: #8b919b; text-decoration: none; }
+.footer-contact a:hover { color: var(--c-bolt); text-decoration: underline; }
 
 /* 頁面標題區（posts / staff 頁用的簡單頂部） */
 .page-head {
@@ -328,6 +408,5 @@ footer a:hover { color: var(--c-bolt); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .project-card, nav a, .staff-card { transition: none; }
-  .hero-fanart { transform: none; }
   .carousel img { transition: none; }
 }

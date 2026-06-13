@@ -13,11 +13,13 @@
 /* ---------- 導覽列項目（三頁共用） ----------
    href 用「頁面檔名 + 錨點」，這樣在任何頁面點選都能正確跳轉。 */
 const NAV = [
-  { key: "nav_home",    href: "index.html" },
-  { key: "nav_ongoing", href: "index.html#ongoing" },
-  { key: "nav_posts",   href: "posts.html" },
-  { key: "nav_staff",   href: "staff.html" },
-  { key: "nav_about",   href: "index.html#footer" },
+  { key: "nav_home",     href: "index.html" },
+  { key: "nav_ongoing",  href: "index.html#ongoing" },
+  { key: "nav_timeline", href: "timeline.html" },
+  { key: "nav_posts",    href: "posts.html" },
+  { key: "nav_fanart",   href: "fanart.html" },
+  { key: "nav_staff",    href: "staff.html" },
+  { key: "nav_about",    href: "about.html" },
 ];
 
 /* ---------- 語言下拉選單的選項 ----------
@@ -37,13 +39,21 @@ const STRINGS = {
     nav_staff: "人員名單", nav_about: "關於我們",
     hero_title: "やたてぃ学園\nはじめラ部",
     sec_news: "最新公告", sec_ongoing: "進行中的企劃", sec_past: "過去的企劃",
-    sec_posts: "活動貼文", sec_staff: "人員名單",
+    sec_posts: "活動貼文", sec_staff: "人員名單", sec_about: "關於我們",
+    about_subtitle: "認識やたてぃ学園はじめラ部",
+    nav_fanart: "ファンアート", nav_timeline: "年表",
+    sec_fanart: "ファンアート", fanart_subtitle: "粉絲為はじめ繪製的賀圖（皆經繪師同意刊載）",
+    fanart_view: "繪師的貼文",
+    sec_timeline: "活動年表", timeline_subtitle: "歷年企劃一覽",
+    add_calendar: "加入行事曆", birthday_title: "轟はじめ 生日",
+    timeline_empty: "尚無活動紀錄。",
+    visitors: "訪客數", privacy_policy: "隱私權政策",
+    sec_privacy: "隱私權政策", privacy_subtitle: "本網站如何處理你的資訊",
     badge_ongoing: "進行中⚡", badge_past: "已結束",
     period: "期間：", longterm: "長期進行中", longterm_suffix: "（長期）",
     empty_ongoing: "目前沒有進行中的企劃，新企劃籌備中，敬請期待！",
     empty_posts: "目前還沒有貼文。",
     cd_label: "距離はじめ的生日還有", cd_d: "天", cd_h: "時", cd_m: "分", cd_s: "秒",
-    fanart_by: "Fanart：",
     expand_more: "展開更多", expand_less: "收合",
     post_original: "查看原文",
     staff_illustrators: "繪師", staff_designers: "設計師", staff_members: "成員",
@@ -59,13 +69,21 @@ const STRINGS = {
     nav_staff: "メンバー", nav_about: "私たちについて",
     hero_title: "やたてぃ学園\nはじめラ部",
     sec_news: "お知らせ", sec_ongoing: "実施中の企画", sec_past: "過去の企画",
-    sec_posts: "活動ポスト", sec_staff: "メンバー",
+    sec_posts: "活動ポスト", sec_staff: "メンバー", sec_about: "私たちについて",
+    about_subtitle: "やたてぃ学園はじめラ部 について",
+    nav_fanart: "ファンアート", nav_timeline: "年表",
+    sec_fanart: "ファンアート", fanart_subtitle: "ファンが描いたはじめへのイラスト（すべて作者の許可を得て掲載）",
+    fanart_view: "作者の投稿",
+    sec_timeline: "活動年表", timeline_subtitle: "これまでの企画一覧",
+    add_calendar: "カレンダーに追加", birthday_title: "轟はじめ お誕生日",
+    timeline_empty: "活動記録はまだありません。",
+    visitors: "来訪者数", privacy_policy: "プライバシーポリシー",
+    sec_privacy: "プライバシーポリシー", privacy_subtitle: "当サイトにおける情報の取り扱いについて",
     badge_ongoing: "実施中⚡", badge_past: "終了",
     period: "期間：", longterm: "常時実施中", longterm_suffix: "（常設）",
     empty_ongoing: "現在実施中の企画はありません。新企画を準備中です。お楽しみに！",
     empty_posts: "まだ投稿はありません。",
     cd_label: "はじめの誕生日まで", cd_d: "日", cd_h: "時間", cd_m: "分", cd_s: "秒",
-    fanart_by: "Fanart：",
     expand_more: "もっと見る", expand_less: "閉じる",
     post_original: "原文を見る",
     staff_illustrators: "イラストレーター", staff_designers: "デザイナー", staff_members: "メンバー",
@@ -79,20 +97,28 @@ const STRINGS = {
   en: {
     nav_home: "Home", nav_ongoing: "Ongoing", nav_posts: "Posts",
     nav_staff: "Members", nav_about: "About",
-    hero_title: "Yatatei Gakuen\nHajime-rabu",
+    hero_title: "Yataty Gakuen\nHajime Rabu",
     sec_news: "News", sec_ongoing: "Ongoing Projects", sec_past: "Past Projects",
-    sec_posts: "Activity Posts", sec_staff: "Members",
+    sec_posts: "Activity Posts", sec_staff: "Members", sec_about: "About Us",
+    about_subtitle: "About Yataty Gakuen Hajime Rabu",
+    nav_fanart: "Fan Art", nav_timeline: "Timeline",
+    sec_fanart: "Fan Art", fanart_subtitle: "Birthday art for Hajime by fans (posted with each artist's permission)",
+    fanart_view: "Artist's post",
+    sec_timeline: "Activity Timeline", timeline_subtitle: "A look back at past projects",
+    add_calendar: "Add to calendar", birthday_title: "Todoroki Hajime's Birthday",
+    timeline_empty: "No activity records yet.",
+    visitors: "Visitors", privacy_policy: "Privacy Policy",
+    sec_privacy: "Privacy Policy", privacy_subtitle: "How this site handles your information",
     badge_ongoing: "ONGOING⚡", badge_past: "ENDED",
     period: "Period: ", longterm: "Ongoing", longterm_suffix: " ~ (ongoing)",
     empty_ongoing: "No ongoing projects right now. New projects are in the works — stay tuned!",
     empty_posts: "No posts yet.",
     cd_label: "Until Hajime's birthday", cd_d: "days", cd_h: "hrs", cd_m: "min", cd_s: "sec",
-    fanart_by: "Fanart: ",
     expand_more: "Read more", expand_less: "Show less",
     post_original: "View original",
     staff_illustrators: "Illustrators", staff_designers: "Designers", staff_members: "Members",
     posts_subtitle: "Posts and activity records from our group",
-    staff_subtitle: "The members of Yatatei Gakuen Hajime-rabu",
+    staff_subtitle: "The members of Yataty Gakuen Hajime Rabu",
     ft_about: "About this project", ft_links: "Links", ft_quick: "Quick links",
     html_lang: "en",
     load_error_title: "Failed to load content",
@@ -234,15 +260,108 @@ const Site = {
 
     grid.append(col1, col2, col3);
     container.append(grid);
-    container.append(el("p", { class: "copyright" }, t(f.copyright)));
+
+    // 底部列：左＝訪客數、中＝版權、右＝隱私權政策
+    const bottom = el("div", { class: "footer-bottom" });
+
+    // 左下：訪客數統計（數字由 initVisitorCounter 之後填入；失敗會自動隱藏）
+    const visitors = el("div", { class: "footer-visitors", id: "footer-visitors", hidden: "" });
+    visitors.append(el("span", { class: "v-label" }, s("visitors") + "："));
+    visitors.append(el("span", { class: "v-count", id: "visitor-count" }, "—"));
+
+    // 中：版權
+    const copy = el("p", { class: "copyright" }, t(f.copyright));
+
+    // 右下：隱私權政策（小連結）
+    const privacy = el("div", { class: "footer-privacy" });
+    privacy.append(el("a", { href: "privacy.html" }, s("privacy_policy")));
+
+    bottom.append(visitors, copy, privacy);
+    container.append(bottom);
+
+    // 最底部：小小的聯絡信箱（mailto）。site.json 沒填 contactEmail 就不顯示
+    if (f.contactEmail) {
+      const contact = el("p", { class: "footer-contact" });
+      contact.append("✉ ");
+      contact.append(el("a", { href: "mailto:" + f.contactEmail }, f.contactEmail));
+      container.append(contact);
+    }
+
     footer.append(container);
     document.body.append(footer);
+
+    // 拉取訪客數（放最後，避免擋住其他渲染）
+    initVisitorCounter();
   },
 };
 
 /* ============================================================
    共用小工具
    ============================================================ */
+
+/* ============================================================
+   訪客數統計
+   ------------------------------------------------------------
+   純靜態網站沒有後端，無法自己記次數，所以借用免費的計數 API。
+   設定在 data/site.json 的 visitorCounter：
+     enabled  : true / false（false 就不顯示）
+     provider : 目前支援 "abacus"（免費、免註冊、無需 cookie）
+     namespace: 自訂命名空間，建議用網域，如 "todoroki-hajime-com"
+     key      : 計數項目名稱，如 "visits"
+   ★ 每位訪客每次載入頁面 +1。數字存在該服務上，跨裝置共用。
+   ★ 服務若失效或被擋，會靜默隱藏計數器，不影響網站其他部分。
+   ★ 想換服務：在下面 PROVIDERS 加一個 builder 即可。
+   ============================================================ */
+const COUNTER_PROVIDERS = {
+  // Abacus: GET /hit/<namespace>/<key> → { value: 數字 }
+  abacus: (cfg) => ({
+    url: `https://abacus.jasoncameron.dev/hit/${encodeURIComponent(cfg.namespace)}/${encodeURIComponent(cfg.key)}`,
+    pick: (data) => data.value,
+  }),
+  // CounterAPI v1: GET /v1/<namespace>/<key>/up → { count: 數字 }
+  counterapi: (cfg) => ({
+    url: `https://api.counterapi.dev/v1/${encodeURIComponent(cfg.namespace)}/${encodeURIComponent(cfg.key)}/up`,
+    pick: (data) => data.count,
+  }),
+};
+
+let _counterDone = false;   // 一次載入只計一次（避免切語言重畫又 +1）
+async function initVisitorCounter() {
+  const cfg = Site.SITE && Site.SITE.visitorCounter;
+  const box = document.getElementById("footer-visitors");
+  if (!box) return;
+  if (!cfg || !cfg.enabled) { box.hidden = true; return; }
+
+  const make = COUNTER_PROVIDERS[cfg.provider];
+  if (!make) { box.hidden = true; return; }
+
+  // 切語言會重畫頁尾；計數只在第一次做，之後沿用快取的數字
+  if (_counterDone && typeof initVisitorCounter._last === "number") {
+    setCount(initVisitorCounter._last);
+    return;
+  }
+
+  try {
+    const { url, pick } = make(cfg);
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error("counter " + res.status);
+    const data = await res.json();
+    const n = pick(data);
+    if (typeof n !== "number") throw new Error("counter bad data");
+    initVisitorCounter._last = n;
+    _counterDone = true;
+    setCount(n);
+  } catch (err) {
+    console.warn("訪客數載入失敗，已隱藏計數器：", err);
+    box.hidden = true;
+  }
+
+  function setCount(n) {
+    const elc = document.getElementById("visitor-count");
+    if (elc) elc.textContent = n.toLocaleString();   // 千分位
+    box.hidden = false;
+  }
+}
 
 /** 依目前語言取多語欄位：{zh,ja}→取值；純字串→原樣 */
 function t(v) {
@@ -258,6 +377,45 @@ function el(tag, attrs = {}, text = "") {
   Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
   if (text) node.textContent = text;
   return node;
+}
+
+/* ============================================================
+   加入行事曆
+   ------------------------------------------------------------
+   產生一個 .ics（iCalendar）下載連結。.ics 是通用格式，
+   iPhone 行事曆、Google 日曆、Outlook 都能匯入，純靜態即可運作。
+   用法：calendarLink("標題", "2026-06-07") → 回傳一個 <a> 按鈕
+   ============================================================ */
+function _ymdCompact(d) { return d.replaceAll("-", ""); }
+function icsContent(title, ymd) {
+  const start = _ymdCompact(ymd);
+  // 全天事件的 DTEND 要設為「隔天」（結束為排他性）
+  const next = new Date(ymd + "T00:00:00");
+  next.setDate(next.getDate() + 1);
+  const end = `${next.getFullYear()}${String(next.getMonth() + 1).padStart(2, "0")}${String(next.getDate()).padStart(2, "0")}`;
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+  // 標題裡的逗號、分號在 ICS 需轉義
+  const safe = title.replace(/([,;\\])/g, "\\$1");
+  return [
+    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Yataty Gakuen Hajime Rabu//JP",
+    "BEGIN:VEVENT",
+    "UID:" + start + "-" + Math.random().toString(36).slice(2) + "@todoroki-hajime.com",
+    "DTSTAMP:" + stamp,
+    "DTSTART;VALUE=DATE:" + start,
+    "DTEND;VALUE=DATE:" + end,
+    "SUMMARY:" + safe,
+    "END:VEVENT", "END:VCALENDAR",
+  ].join("\r\n");
+}
+/** 回傳「加入行事曆」按鈕（<a>），點擊下載對應的 .ics */
+function calendarLink(title, ymd, extraClass = "") {
+  const a = el("a", {
+    class: "cal-btn" + (extraClass ? " " + extraClass : ""),
+    download: "event.ics",
+    href: "data:text/calendar;charset=utf-8," + encodeURIComponent(icsContent(title, ymd)),
+  });
+  a.append("📅 " + s("add_calendar"));
+  return a;
 }
 
 /** 載入 JSON。no-cache 確保更新後訪客不會看到舊資料 */

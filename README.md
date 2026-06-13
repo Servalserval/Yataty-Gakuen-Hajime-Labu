@@ -4,6 +4,10 @@
 
 ```
 ├── index.html          首頁（Hero、公告、企劃）
+├── timeline.html       活動年表頁
+├── fanart.html         ファンアート頁
+├── about.html          關於我們頁
+├── privacy.html        隱私權政策頁
 ├── posts.html          活動貼文頁
 ├── staff.html          人員名單頁
 ├── README.md           本說明
@@ -11,6 +15,10 @@
 │   ├── style.css         全站樣式（改配色在這檔最上面的 :root）
 │   ├── common.js         共用：導覽列、頁尾、語言、燈箱、介面文字
 │   ├── home.js           首頁程式
+│   ├── timeline.js       年表頁程式（讀企劃資料自動產生）
+│   ├── fanart.js         ファンアート頁程式
+│   ├── about.js          關於我們頁程式
+│   ├── privacy.js        隱私權政策頁程式
 │   ├── posts.js          貼文頁程式
 │   └── staff.js          人員頁程式
 ├── images/             共用圖片
@@ -20,6 +28,9 @@
 │   └── staff/            人員頭像
 └── data/               ★ 所有內容（平常只改這裡）
     ├── site.json         全站：Hero、公告、分類、頁尾
+    ├── fanart.json       ファンアート清單
+    ├── about.json        關於我們內容
+    ├── privacy.json      隱私權政策內容
     ├── posts.json        活動貼文清單
     ├── staff.json        人員名單
     └── projects/
@@ -99,3 +110,28 @@ python3 -m http.server
 - [ ] `images/og-cover.png` 換成自己的分享圖
 - [ ] 圖片壓縮（squoosh.app，建議 < 500KB）
 - [ ] 對照 COVER 二次創作規範（特別是金流相關）
+
+
+## 訪客數統計（頁尾左下）
+數字來自免費計數服務，設定在 `data/site.json` 的 `visitorCounter`：
+- `enabled`：`true`/`false`，設 false 就不顯示計數器
+- `provider`：目前支援 `"abacus"`（免費、免註冊、不需 cookie）或 `"counterapi"`
+- `namespace` / `key`：計數的命名空間與項目名，namespace 建議用網域
+每次有人載入頁面數字 +1，計數存在該服務上、跨裝置共用。若服務失效會自動隱藏，不影響網站。
+> ⚠️ 這類免費服務可能停用。若哪天數字消失，多半是服務問題，可換 `provider` 或到該服務確認。
+> ⚠️ 隱私權政策（`data/privacy.json`）裡已說明有使用此計數器與 localStorage 語言記憶；若你改用其他統計服務（如 Google Analytics），記得回頭更新隱私權政策內容。
+
+
+## 新增 ファンアート → `data/fanart.json`
+複製一個 `{ ... }` 區塊：`url`(繪師原貼文)、`image`(放 images/fanart/)、`artist`(繪師帳號)、`date`、`text`(說明，三語)。
+> ⚠️ 刊載任何賀圖前，務必先取得繪師同意，並保留署名與原貼文連結。
+
+## 活動年表（timeline.html）
+不需要另外維護——它直接讀 `data/projects/` 的企劃，依年份自動分組。你新增企劃，年表就自動更新。年份取自企劃的 `start`（沒有就 `end`）。
+
+## 加入行事曆
+首頁生日下方、以及每個「進行中且有截止日」的企劃卡，都有「加入行事曆」按鈕，點了會下載 .ics 檔（iPhone 行事曆／Google 日曆／Outlook 都能匯入）。不需設定，會用企劃的日期自動產生。
+
+## sitemap.xml / robots.txt
+`sitemap.xml` 列出所有頁面供搜尋引擎收錄；`robots.txt` 指向它。★ 新增「頁面」（html）時記得到 sitemap.xml 補一行 <url>；新增企劃／貼文不用動它。
+部署後可到 Google Search Console 提交 https://todoroki-hajime.com/sitemap.xml 加速收錄。

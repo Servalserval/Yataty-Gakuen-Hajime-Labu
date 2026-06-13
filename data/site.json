@@ -2,29 +2,61 @@
   "hero": {
     "birthdayMonthDay": "06-07",
     "date": "2026.06.07 SUN",
-    "fanart": {
-      "src": "images/hero-fanart.jpg",
-      "alt": { "zh": "轟はじめ生日賀圖", "ja": "轟はじめ誕生日ファンアート", "en": "Todoroki Hajime birthday fanart" },
-      "artistName": "繪師名稱（請替換）",
-      "artistUrl": "https://x.com/artist_id"
-    },
     "tags": [
-      { "label": "#ぶんぶんばんちょー", "url": "https://x.com/hashtag/ぶんぶんばんちょー" },
-      { "label": "#はじめ武勇伝", "url": "https://x.com/hashtag/はじめ武勇伝" }
+      {
+        "label": "#ぶんぶんばんちょー",
+        "url": "https://x.com/hashtag/ぶんぶんばんちょー"
+      },
+      {
+        "label": "#はじめ武勇伝",
+        "url": "https://x.com/hashtag/はじめ武勇伝"
+      }
     ]
   },
   "news": [
     {
       "date": "2026-05-01",
-      "title": { "zh": "應援企劃網站正式公開！", "ja": "応援企画サイトを公開しました！", "en": "Our support project website is now live!" },
+      "title": {
+        "zh": "應援企劃網站正式公開！",
+        "ja": "応援企画サイトを公開しました！",
+        "en": "Our support project website is now live!"
+      },
       "url": ""
     }
   ],
   "categories": {
-    "ad":       { "label": { "zh": "應援廣告",   "ja": "応援広告",         "en": "Support Ad" },        "color": "#ffd028" },
-    "netprint": { "label": { "zh": "netprint",   "ja": "ネットプリント",   "en": "Netprint" },          "color": "#9fd8ff" },
-    "yosegaki": { "label": { "zh": "寄せ書き",   "ja": "寄せ書き",         "en": "Group Message" },     "color": "#ffc2d4" },
-    "postcard": { "label": { "zh": "免費明信片", "ja": "ポストカード配布", "en": "Free Postcard" },     "color": "#c8f0c0" }
+    "ad": {
+      "label": {
+        "zh": "應援廣告",
+        "ja": "応援広告",
+        "en": "Support Ad"
+      },
+      "color": "#ffd028"
+    },
+    "netprint": {
+      "label": {
+        "zh": "netprint",
+        "ja": "ネットプリント",
+        "en": "Netprint"
+      },
+      "color": "#9fd8ff"
+    },
+    "yosegaki": {
+      "label": {
+        "zh": "寄せ書き",
+        "ja": "寄せ書き",
+        "en": "Group Message"
+      },
+      "color": "#ffc2d4"
+    },
+    "postcard": {
+      "label": {
+        "zh": "免費明信片",
+        "ja": "ポストカード配布",
+        "en": "Free Postcard"
+      },
+      "color": "#c8f0c0"
+    }
   },
   "footer": {
     "disclaimer": {
@@ -33,14 +65,42 @@
       "en": "This is an unofficial, fan-run support project by \"Yatatei Gakuen Hajime-rabu.\" It operates in accordance with COVER Corp.'s derivative-work guidelines and is not affiliated with COVER Corp. or hololive production. All related trademarks and character copyrights belong to COVER Corp."
     },
     "socials": [
-      { "label": { "zh": "主辦 X：@massugumi_babu", "ja": "主催 X：@massugumi_babu", "en": "Organizer X: @massugumi_babu" }, "url": "https://x.com/massugumi_babu" },
-      { "label": { "zh": "轟はじめ X", "ja": "轟はじめ X", "en": "Todoroki Hajime X" }, "url": "https://x.com/todoroki_hajime" },
-      { "label": { "zh": "轟はじめ YouTube", "ja": "轟はじめ YouTube", "en": "Todoroki Hajime YouTube" }, "url": "https://www.youtube.com/@TodorokiHajime" }
+      {
+        "label": {
+          "zh": "主辦 X：@massugumi_babu",
+          "ja": "主催 X：@massugumi_babu",
+          "en": "Organizer X: @massugumi_babu"
+        },
+        "url": "https://x.com/massugumi_babu"
+      },
+      {
+        "label": {
+          "zh": "轟はじめ X",
+          "ja": "轟はじめ X",
+          "en": "Todoroki Hajime X"
+        },
+        "url": "https://x.com/todoroki_hajime"
+      },
+      {
+        "label": {
+          "zh": "轟はじめ YouTube",
+          "ja": "轟はじめ YouTube",
+          "en": "Todoroki Hajime YouTube"
+        },
+        "url": "https://www.youtube.com/@TodorokiHajime"
+      }
     ],
     "copyright": {
       "zh": "© 2026 やたてぃ学園はじめラ部（非官方應援企劃）",
       "ja": "© 2026 やたてぃ学園はじめラ部（非公式応援企画）",
       "en": "© 2026 Yatatei Gakuen Hajime-rabu (unofficial fan project)"
-    }
+    },
+    "contactEmail": "massugumibabu@gmail.com"
+  },
+  "visitorCounter": {
+    "enabled": true,
+    "provider": "abacus",
+    "namespace": "todoroki-hajime-com",
+    "key": "visits"
   }
 }

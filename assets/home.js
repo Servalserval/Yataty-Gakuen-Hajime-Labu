@@ -64,6 +64,14 @@ function buildCard(p, past) {
     p.links.forEach(l => box.append(el("a", { href: l.url, target: "_blank", rel: "noopener" }, t(l.label))));
     body.append(box);
   }
+
+  // 進行中且有截止日的企劃，附「加入行事曆」（提醒截止日）
+  if (!past && p.end) {
+    const calRow = el("div", { class: "project-cal" });
+    calRow.append(calendarLink(t(p.name), p.end));
+    body.append(calRow);
+  }
+
   card.append(body);
   return card;
 }
@@ -116,19 +124,18 @@ function renderHome() {
   const H = Site.SITE.hero;
   document.getElementById("hero-date").textContent = H.date;
 
-  // Hero fanart
-  const figure = document.getElementById("hero-fanart");
-  if (H.fanart) {
-    figure.hidden = false;
-    const img = document.getElementById("fanart-img");
-    img.src = H.fanart.src;
-    img.alt = t(H.fanart.alt);
-    img.onerror = () => { figure.hidden = true; };
-    const credit = document.getElementById("fanart-credit");
-    credit.textContent = s("fanart_by");
-    credit.append(el("a", { href: H.fanart.artistUrl, target: "_blank", rel: "noopener" }, H.fanart.artistName));
-  } else {
-    figure.hidden = true;
+  // 生日「加入行事曆」按鈕（用即將到來的那一年）
+  const calBox = document.getElementById("hero-cal");
+  calBox.textContent = "";
+  if (H.birthdayMonthDay) {
+    const [mm, dd] = H.birthdayMonthDay.split("-").map(Number);
+    const now = new Date();
+    let year = now.getFullYear();
+    // 今年生日已過就用明年
+    const todayMd = (now.getMonth() + 1) * 100 + now.getDate();
+    if (todayMd > mm * 100 + dd) year += 1;
+    const ymd = `${year}-${String(mm).padStart(2, "0")}-${String(dd).padStart(2, "0")}`;
+    calBox.append(calendarLink(s("birthday_title"), ymd));
   }
 
   // hashtags

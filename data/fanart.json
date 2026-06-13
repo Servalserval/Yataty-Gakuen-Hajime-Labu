@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://x.com/artist_a/status/0000000000000000000",
+    "image": "images/fanart/fa-1.jpg",
+    "artist": "@artist_a",
+    "date": "2026-06-05",
+    "text": {
+      "zh": "生日快樂はじめ！這張賀圖的說明預設只顯示幾行，太長會出現展開。（範例，請替換）",
+      "ja": "お誕生日おめでとう、はじめ！このイラスト説明はデフォルトで数行だけ表示されます。（サンプル）",
+      "en": "Happy birthday, Hajime! This caption shows only a few lines by default. (sample)"
+    }
+  },
+  {
+    "url": "https://x.com/artist_b/status/0000000000000000001",
+    "image": "images/fanart/fa-2.jpg",
+    "artist": "@artist_b",
+    "date": "2026-06-03",
+    "text": {
+      "zh": "為生誕祭畫的賀圖（範例，請替換）",
+      "ja": "生誕祭のために描いたイラスト（サンプル）",
+      "en": "Art drawn for the birthday celebration (sample)"
+    }
+  }
+]

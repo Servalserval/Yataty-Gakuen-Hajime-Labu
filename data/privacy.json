@@ -1,0 +1,89 @@
+{
+  "lead": {
+    "zh": "歡迎光臨「やたてぃ学園はじめラ部 – 轟はじめ生誕祭（非官方）」（以下簡稱本網站）。本網站是粉絲自主經營的非官方應援網站，沒有自己的後端伺服器或會員系統。本頁說明本網站實際上會（與不會）處理哪些資訊，請您詳閱以下內容。最後更新：2026/06/13。",
+    "ja": "「やたてぃ学園はじめラ部 – 轟はじめ生誕祭（非公式）」（以下、本サイト）へようこそ。本サイトはファン有志が運営する非公式の応援サイトで、独自のバックエンドサーバーや会員システムを持ちません。本ページでは、本サイトが実際に取り扱う（また取り扱わない）情報について説明します。下記の内容をご一読ください。最終更新：2026/06/13。",
+    "en": "Welcome to \"Yataty Gakuen Hajime Rabu – Todoroki Hajime Birthday (Unofficial)\" (the \"Site\"). This is an unofficial, fan-run support site with no backend server or membership system of its own. This page explains what information the Site actually does and does not handle. Please read the following. Last updated: 2026/06/13."
+  },
+  "sections": [
+    {
+      "heading": { "zh": "一、適用範圍", "ja": "一、適用範囲", "en": "1. Scope" },
+      "body": [
+        {
+          "zh": "本政策說明本網站如何處理您造訪時涉及的資訊。本政策不適用於本網站連出的外部網站（如 X、YouTube、Google 表單／地圖等），各該網站請參考其自身的隱私權政策。",
+          "ja": "本方針は、あなたが本サイトを訪問した際に関わる情報を、本サイトがどのように取り扱うかを説明するものです。本方針は、本サイトからリンクする外部サイト（X、YouTube、Google フォーム／マップなど）には適用されません。各サイトのプライバシーポリシーをご参照ください。",
+          "en": "This policy explains how the Site handles information involved when you visit. It does not apply to external sites the Site links to (such as X, YouTube, Google Forms/Maps); please refer to each site's own privacy policy."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "二、本網站不蒐集個人資料", "ja": "二、個人情報を収集しません", "en": "2. We Do Not Collect Personal Data" },
+      "body": [
+        {
+          "zh": "本網站為純靜態網站，不提供註冊或登入功能，也沒有後端伺服器或資料庫。我們不會主動向您蒐集姓名、電子郵件、地址、電話等可識別個人身分的資料。若您透過下方信箱主動與我們聯絡，我們僅會為了回覆您而使用您信件中提供的資訊。",
+          "ja": "本サイトは純粋な静的サイトであり、登録やログイン機能はなく、バックエンドサーバーやデータベースもありません。氏名・メールアドレス・住所・電話番号など個人を特定できる情報を、当方から能動的に収集することはありません。下記のメールアドレスからご連絡いただいた場合に限り、ご返信のためにメール内の情報を利用します。",
+          "en": "The Site is a purely static website with no sign-up or login, and no backend server or database. We do not actively collect personally identifiable information such as your name, email, address or phone number. Only if you contact us at the email below do we use the information in your message, solely to reply to you."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "三、瀏覽器本機儲存（語言設定）", "ja": "三、ブラウザのローカル保存（言語設定）", "en": "3. Browser Local Storage (Language Setting)" },
+      "body": [
+        {
+          "zh": "本網站不使用 Cookie。為了記住您選擇的顯示語言（中／日／英），本網站會在您的瀏覽器使用 localStorage 儲存一個語言偏好值。這筆資料只留在您的裝置上，不會傳送給我們或任何第三方。您可隨時清除瀏覽器資料來移除它，移除後不影響瀏覽，只是下次造訪會回到預設語言。",
+          "ja": "本サイトは Cookie を使用しません。選択された表示言語（中／日／英）を記憶するため、本サイトはブラウザの localStorage に言語設定の値を保存します。このデータはお使いの端末内にのみ保存され、当方や第三者に送信されることはありません。ブラウザのデータを消去すればいつでも削除でき、削除しても閲覧に支障はなく、次回訪問時に既定の言語へ戻るだけです。",
+          "en": "The Site does not use cookies. To remember your chosen display language (Chinese / Japanese / English), it stores a language-preference value in your browser's localStorage. This data stays only on your device and is never sent to us or any third party. You can remove it anytime by clearing your browser data; doing so does not affect browsing — your next visit simply reverts to the default language."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "四、訪客數統計", "ja": "四、来訪者数のカウント", "en": "4. Visitor Count" },
+      "body": [
+        {
+          "zh": "頁尾顯示的訪客數，是透過第三方免費計數服務（Abacus）累計頁面載入次數。該服務僅統計總次數，不會記錄能識別您個人身分的資訊。我們不會將任何資料提供、交換或出售給廣告商或其他第三方。",
+          "ja": "フッターに表示している来訪者数は、第三者の無料カウントサービス（Abacus）を利用してページの読み込み回数を集計したものです。同サービスは合計回数のみを数え、個人を特定できる情報は記録しません。当方はいかなるデータも広告事業者やその他の第三者へ提供・交換・販売しません。",
+          "en": "The visitor count shown in the footer tallies page loads via a third-party free counter service (Abacus). That service counts totals only and does not record information that identifies you personally. We do not provide, exchange or sell any data to advertisers or other third parties."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "五、託管服務與伺服器紀錄", "ja": "五、ホスティングとサーバーログ", "en": "5. Hosting and Server Logs" },
+      "body": [
+        {
+          "zh": "本網站託管於第三方靜態網站平台（Cloudflare Pages）。如同一般網站，該平台基於資安與防護目的，可能會自動記錄連線的 IP 位址、時間、瀏覽器等技術性資訊。這些紀錄由該平台依其自身政策保管，本網站不會主動讀取、保存或用於其他用途。",
+          "ja": "本サイトは第三者の静的サイトプラットフォーム（Cloudflare Pages）でホストされています。一般的なウェブサイトと同様、当該プラットフォームはセキュリティ・防護の目的で、接続元の IP アドレス・時刻・ブラウザなどの技術的情報を自動的に記録する場合があります。これらの記録は当該プラットフォームが自身の方針に基づき管理するものであり、本サイトが能動的に読み取り・保存し、または他の用途に用いることはありません。",
+          "en": "The Site is hosted on a third-party static-site platform (Cloudflare Pages). As with any website, that platform may automatically log technical information such as the connecting IP address, time and browser for security and protection purposes. Such logs are kept by that platform under its own policy; the Site does not actively read, store or use them for other purposes."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "六、對外連結", "ja": "六、外部リンク", "en": "6. External Links" },
+      "body": [
+        {
+          "zh": "本網站含有指向 X（Twitter）、YouTube、Google 表單／地圖等外部網站的連結。當您點擊或這些內容載入時，將適用各該服務自己的隱私權政策，本網站無法控制其行為，亦不對其內容負責。",
+          "ja": "本サイトには X（Twitter）、YouTube、Google フォーム／マップなど外部サイトへのリンクが含まれます。これらをクリックまたは読み込んだ場合、各サービス自身のプライバシーポリシーが適用され、本サイトはその挙動を制御できず、その内容について責任を負いません。",
+          "en": "The Site contains links to external sites such as X (Twitter), YouTube and Google Forms/Maps. When you click them or such content loads, each service's own privacy policy applies; the Site has no control over their behavior and is not responsible for their content."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "七、本政策之修正", "ja": "七、本方針の改定", "en": "7. Amendments to This Policy" },
+      "body": [
+        {
+          "zh": "本政策將因應網站功能或服務的調整而隨時修正，修正後的內容將直接刊登於本頁。",
+          "ja": "本方針は、サイトの機能やサービスの変更に応じて随時改定されることがあります。改定後の内容は本ページに掲載します。",
+          "en": "This policy may be amended at any time in response to changes in the Site's features or services; amended content will be posted directly on this page."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "八、聯絡我們", "ja": "八、お問い合わせ", "en": "8. Contact Us" },
+      "body": [
+        {
+          "zh": "如果您對本隱私權政策或對網站／活動有任何疑問或意見，歡迎隨時與我們聯絡：\n電子郵件：massugumibabu@gmail.com（網站管理）\n最後更新：2026/06/13",
+          "ja": "本プライバシーポリシーやサイト・イベントについてご質問・ご意見がございましたら、いつでもお気軽にお問い合わせください：\nメール：massugumibabu@gmail.com（サイト管理）\n最終更新：2026/06/13",
+          "en": "If you have any questions or comments about this privacy policy or the Site/events, feel free to contact us anytime:\nEmail: massugumibabu@gmail.com (site administration)\nLast updated: 2026/06/13"
+        }
+      ]
+    }
+  ]
+}

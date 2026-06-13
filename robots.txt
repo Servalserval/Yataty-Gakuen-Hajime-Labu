@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://todoroki-hajime.com/sitemap.xml

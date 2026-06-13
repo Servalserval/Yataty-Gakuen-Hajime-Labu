@@ -1,0 +1,42 @@
+{
+  "lead": {
+    "zh": "「やたてぃ学園はじめラ部」是一群喜歡轟はじめ的粉絲所組成的非官方應援團體。我們透過應援廣告、netprint、寄せ書き、明信片配布等企劃，一起為番長加油打氣！",
+    "ja": "「やたてぃ学園はじめラ部」は、轟はじめが大好きなファン有志による非公式の応援団体です。応援広告・ネットプリント・寄せ書き・ポストカード配布などの企画を通して、ばんちょーを一緒に応援しています！",
+    "en": "Yatatei Gakuen Hajime-rabu is an unofficial fan group made up of people who love Todoroki Hajime. Through support ads, netprints, group message boards, postcard giveaways and more, we cheer on the Bancho together!"
+  },
+  "sections": [
+    {
+      "heading": { "zh": "我們是誰", "ja": "私たちについて", "en": "Who We Are" },
+      "body": [
+        {
+          "zh": "我們是一群跨地區的「真っす組」粉絲，因為共同喜歡轟はじめ而聚在一起。所有企劃都由成員自發籌備與營運，沒有任何商業目的。",
+          "ja": "私たちは地域を越えて集まった「真っす組」のファンです。轟はじめが好きという共通点でつながり、すべての企画はメンバーの有志によって準備・運営されています。営利目的は一切ありません。",
+          "en": "We are fans of the \"Massugu-gumi\" from many regions, brought together by a shared love for Todoroki Hajime. Every project is planned and run voluntarily by members, with no commercial purpose."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "我們做什麼", "ja": "活動内容", "en": "What We Do" },
+      "body": [
+        {
+          "zh": "我們企劃並執行各種生日應援活動，包括車站／街頭應援廣告、超商 netprint 配布、向はじめ募集祝福留言的寄せ書き，以及免費紀念明信片配布等。詳細的進行中與過去企劃，請見首頁。",
+          "ja": "誕生日応援を中心に、駅・街頭での応援広告、コンビニでのネットプリント配布、はじめへのメッセージを集める寄せ書き、記念ポストカードの無料配布など、さまざまな企画を実施しています。実施中・過去の企画はトップページをご覧ください。",
+          "en": "Centered on birthday celebrations, we plan and run a range of projects: station and street support ads, convenience-store netprint giveaways, group message boards collecting wishes for Hajime, and free commemorative postcard giveaways. See the home page for current and past projects."
+        }
+      ]
+    },
+    {
+      "heading": { "zh": "參加與聯絡", "ja": "参加・お問い合わせ", "en": "Join / Contact" },
+      "body": [
+        {
+          "zh": "想參與企劃、提供協助，或有任何詢問，歡迎透過下方的官方 X 帳號私訊我們。也歡迎追蹤帳號，掌握最新企劃消息！",
+          "ja": "企画への参加・お手伝い・ご質問などは、下記の公式 X アカウントの DM までお気軽にどうぞ。最新の企画情報はアカウントのフォローでチェックできます！",
+          "en": "If you'd like to take part, help out, or have any questions, feel free to DM us on our official X account below. Follow the account to catch the latest project news!"
+        }
+      ]
+    }
+  ],
+  "links": [
+    { "label": { "zh": "官方 X（主辦）", "ja": "公式 X（主催）", "en": "Official X (organizer)" }, "url": "https://x.com/massugumi_babu" }
+  ]
+}
