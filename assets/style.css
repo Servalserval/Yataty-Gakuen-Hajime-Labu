@@ -221,8 +221,6 @@ nav a:hover, nav a:focus-visible, nav a.active { border-bottom-color: var(--c-bo
   padding: 3px 14px; transform: skewX(-8deg);
   box-shadow: 0 2px 6px rgba(0,0,0,0.25); z-index: 2;
 }
-.project-card.is-past .carousel img,
-.project-card.is-past .project-photo { filter: grayscale(1) brightness(0.92); }
 .project-card.is-past { background: #ededf0; }
 .project-card.is-past:hover { transform: none; box-shadow: none; }
 .badge-past {
