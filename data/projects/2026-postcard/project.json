@@ -1,9 +1,9 @@
 {
   "cat": "netprint",
   "name": { 
-    "zh": "生日紀念 netprint 配布", 
-    "ja": "記念ネットプリント配布", 
-    "en": "Commemorative Netprint" 
+    "zh": "生日紀念 netprint 配布（範例）", 
+    "ja": "記念ネットプリント配布（サンプル）", 
+    "en": "Commemorative Netprint (sample)" 
   },
   "start": "2026-06-01",
   "end": "2026-06-30",
