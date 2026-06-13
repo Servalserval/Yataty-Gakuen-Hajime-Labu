@@ -14,7 +14,7 @@
    href 用「頁面檔名 + 錨點」，這樣在任何頁面點選都能正確跳轉。 */
 const NAV = [
   { key: "nav_home",     href: "index.html" },
-  { key: "nav_ongoing",  href: "index.html#ongoing" },
+  { key: "nav_ongoing",  href: "ongoing.html" },
   { key: "nav_timeline", href: "timeline.html" },
   { key: "nav_posts",    href: "posts.html" },
   { key: "nav_fanart",   href: "fanart.html" },
@@ -46,6 +46,7 @@ const STRINGS = {
     fanart_view: "繪師的貼文",
     sec_timeline: "活動年表", timeline_subtitle: "歷年企劃一覽",
     add_calendar: "加入行事曆", birthday_title: "轟はじめ 生日",
+    countdown_title: "到生日還有多久", ongoing_subtitle: "目前正在進行的應援企劃",
     timeline_empty: "尚無活動紀錄。",
     visitors: "訪客數", privacy_policy: "隱私權政策",
     sec_privacy: "隱私權政策", privacy_subtitle: "本網站如何處理你的資訊",
@@ -76,6 +77,7 @@ const STRINGS = {
     fanart_view: "作者の投稿",
     sec_timeline: "活動年表", timeline_subtitle: "これまでの企画一覧",
     add_calendar: "カレンダーに追加", birthday_title: "轟はじめ お誕生日",
+    countdown_title: "誕生日まであと", ongoing_subtitle: "現在実施中の応援企画",
     timeline_empty: "活動記録はまだありません。",
     visitors: "来訪者数", privacy_policy: "プライバシーポリシー",
     sec_privacy: "プライバシーポリシー", privacy_subtitle: "当サイトにおける情報の取り扱いについて",
@@ -106,6 +108,7 @@ const STRINGS = {
     fanart_view: "Artist's post",
     sec_timeline: "Activity Timeline", timeline_subtitle: "A look back at past projects",
     add_calendar: "Add to calendar", birthday_title: "Todoroki Hajime's Birthday",
+    countdown_title: "Countdown to Birthday", ongoing_subtitle: "Support projects happening now",
     timeline_empty: "No activity records yet.",
     visitors: "Visitors", privacy_policy: "Privacy Policy",
     sec_privacy: "Privacy Policy", privacy_subtitle: "How this site handles your information",
@@ -306,7 +309,7 @@ const Site = {
    設定在 data/site.json 的 visitorCounter：
      enabled  : true / false（false 就不顯示）
      provider : 目前支援 "abacus"（免費、免註冊、無需 cookie）
-     namespace: 自訂命名空間，建議用網域，如 "todoroki-hajime-com"
+     namespace: 自訂命名空間，建議用網域，如 "yataty-gakuen-com"
      key      : 計數項目名稱，如 "visits"
    ★ 每位訪客每次載入頁面 +1。數字存在該服務上，跨裝置共用。
    ★ 服務若失效或被擋，會靜默隱藏計數器，不影響網站其他部分。
@@ -399,7 +402,7 @@ function icsContent(title, ymd) {
   return [
     "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Yataty Gakuen Hajime Rabu//JP",
     "BEGIN:VEVENT",
-    "UID:" + start + "-" + Math.random().toString(36).slice(2) + "@todoroki-hajime.com",
+    "UID:" + start + "-" + Math.random().toString(36).slice(2) + "@yataty-gakuen.com",
     "DTSTAMP:" + stamp,
     "DTSTART;VALUE=DATE:" + start,
     "DTEND;VALUE=DATE:" + end,
@@ -537,4 +540,93 @@ function makeCarousel(images, { interval = 3500, grayscaleClickSrc = null } = {}
   }
 
   return box;
+}
+
+/* ============================================================
+   企劃（projects）共用模組
+   ------------------------------------------------------------
+   首頁、進行中頁、年表頁都會用到企劃資料，故集中在這裡，避免重複。
+   ============================================================ */
+
+/** 載入所有企劃；每筆會帶 _dir（自己的資料夾路徑，圖片用）。
+    某筆 JSON 壞掉只會略過該筆，不影響其他。 */
+async function loadProjects() {
+  const list = await fetchJSON("data/projects/_list.json");
+  const results = await Promise.allSettled(list.map(async id => {
+    const p = await fetchJSON(`data/projects/${id}/project.json`);
+    p._dir = `data/projects/${id}/`;
+    return p;
+  }));
+  results.filter(r => r.status === "rejected")
+         .forEach(r => console.warn("企劃載入失敗，已略過：", r.reason));
+  return results.filter(r => r.status === "fulfilled").map(r => r.value);
+}
+
+/** 企劃是否已結束（以日本時間 JST 為準，全球訪客分類一致） */
+function isPast(p) {
+  if (!p.end) return false;
+  return new Date(p.end + "T23:59:59+09:00") < new Date();
+}
+
+/** 期間顯示文字，如 "2026/06/01 ～ 2026/06/14" */
+function periodText(p) {
+  const fmt = d => d ? d.replaceAll("-", "/") : "";
+  if (!p.start && !p.end) return s("longterm");
+  if (!p.end) return `${fmt(p.start)} ～${s("longterm_suffix")}`;
+  return `${fmt(p.start)} ～ ${fmt(p.end)}`;
+}
+
+/** 企劃圖片陣列：優先用 images（多張→輪播），否則用單張 cover */
+function projectImages(p) {
+  if (Array.isArray(p.images) && p.images.length) {
+    return p.images.map(name => ({ src: p._dir + name, alt: t(p.name) }));
+  }
+  if (p.cover) return [{ src: p._dir + p.cover, alt: t(p.name) }];
+  return [];
+}
+
+/** 建立一張企劃卡片。past=true 套用灰階「已結束」樣式 */
+function buildProjectCard(p, past) {
+  const card = el("article", { class: "project-card" + (past ? " is-past" : "") });
+
+  const imgs = projectImages(p);
+  if (imgs.length) card.append(makeCarousel(imgs));
+
+  card.append(past
+    ? el("span", { class: "badge-past" }, s("badge_past"))
+    : el("span", { class: "badge-ongoing" }, s("badge_ongoing")));
+
+  const body = el("div", { class: "project-body" });
+  const cat = Site.SITE.categories[p.cat];
+  if (cat) {
+    const tag = el("span", { class: "project-cat" }, t(cat.label));
+    tag.style.background = cat.color;
+    body.append(tag);
+  }
+  body.append(el("h3", { class: "project-name" }, t(p.name)));
+  body.append(el("p", { class: "project-period" }, s("period") + periodText(p)));
+  body.append(makeClampable(t(p.desc)));
+
+  if (p.hashtags?.length) {
+    const tagBox = el("div", { class: "project-hashtags" });
+    p.hashtags.forEach(h => {
+      const url = "https://x.com/search?q=" + encodeURIComponent(h);
+      tagBox.append(el("a", { href: url, target: "_blank", rel: "noopener" }, h));
+    });
+    body.append(tagBox);
+  }
+  if (p.links?.length) {
+    const box = el("div", { class: "project-links" });
+    p.links.forEach(l => box.append(el("a", { href: l.url, target: "_blank", rel: "noopener" }, t(l.label))));
+    body.append(box);
+  }
+  // 進行中且有截止日 → 附「加入行事曆」（提醒截止日）
+  if (!past && p.end) {
+    const calRow = el("div", { class: "project-cal" });
+    calRow.append(calendarLink(t(p.name), p.end));
+    body.append(calRow);
+  }
+
+  card.append(body);
+  return card;
 }

@@ -4,6 +4,7 @@
 
 ```
 ├── index.html          首頁（Hero、公告、企劃）
+├── ongoing.html        進行中的企劃頁
 ├── timeline.html       活動年表頁
 ├── fanart.html         ファンアート頁
 ├── about.html          關於我們頁
@@ -15,6 +16,7 @@
 │   ├── style.css         全站樣式（改配色在這檔最上面的 :root）
 │   ├── common.js         共用：導覽列、頁尾、語言、燈箱、介面文字
 │   ├── home.js           首頁程式
+│   ├── ongoing.js        進行中的企劃頁程式
 │   ├── timeline.js       年表頁程式（讀企劃資料自動產生）
 │   ├── fanart.js         ファンアート頁程式
 │   ├── about.js          關於我們頁程式
@@ -134,4 +136,11 @@ python3 -m http.server
 
 ## sitemap.xml / robots.txt
 `sitemap.xml` 列出所有頁面供搜尋引擎收錄；`robots.txt` 指向它。★ 新增「頁面」（html）時記得到 sitemap.xml 補一行 <url>；新增企劃／貼文不用動它。
-部署後可到 Google Search Console 提交 https://todoroki-hajime.com/sitemap.xml 加速收錄。
+部署後可到 Google Search Console 提交 https://yataty-gakuen.com/sitemap.xml 加速收錄。
+
+
+## 頁面結構說明（v5 後續調整）
+- 首頁（index.html）：Hero 標題 → 「到生日還有多久」倒數區塊 → 公告 → 前往進行中企劃的入口 → 過去的企劃。
+- 進行中的企劃獨立成 `ongoing.html`；首頁只放入口按鈕。
+- 生日倒數邏輯（以日本時間）：今年生日已過 → 倒數到明年；生日當天 → 顯示「生日當天」不倒數；隔天起 → 倒數到再下一年。
+- 企劃卡的共用程式（buildProjectCard / isPast / loadProjects / periodText）已集中到 `common.js`，首頁、進行中頁、年表頁共用，改一處即全站生效。

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 網站地圖：幫助 Google 等搜尋引擎收錄。新增頁面時記得來這裡補一行 <url> -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://todoroki-hajime.com/</loc></url>
-  <url><loc>https://todoroki-hajime.com/timeline.html</loc></url>
-  <url><loc>https://todoroki-hajime.com/posts.html</loc></url>
-  <url><loc>https://todoroki-hajime.com/fanart.html</loc></url>
-  <url><loc>https://todoroki-hajime.com/staff.html</loc></url>
-  <url><loc>https://todoroki-hajime.com/about.html</loc></url>
-  <url><loc>https://todoroki-hajime.com/privacy.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/</loc></url>
+  <url><loc>https://yataty-gakuen.com/ongoing.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/timeline.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/posts.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/fanart.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/staff.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/about.html</loc></url>
+  <url><loc>https://yataty-gakuen.com/privacy.html</loc></url>
 </urlset>
