@@ -14,6 +14,7 @@
    href 用「頁面檔名 + 錨點」，這樣在任何頁面點選都能正確跳轉。 */
 const NAV = [
   { key: "nav_home",     href: "index.html" },
+  { key: "nav_countdown", href: "countdown.html" },
   { key: "nav_ongoing",  href: "ongoing.html" },
   { key: "nav_timeline", href: "timeline.html" },
   { key: "nav_posts",    href: "posts.html" },
@@ -47,6 +48,7 @@ const STRINGS = {
     sec_timeline: "活動年表", timeline_subtitle: "歷年企劃一覽",
     add_calendar: "加入行事曆", birthday_title: "轟はじめ 生日",
     countdown_title: "到生日還有多久", ongoing_subtitle: "目前正在進行的應援企劃",
+    nav_countdown: "倒數", sec_countdown: "倒數計時", countdown_subtitle: "距離各個重要日子還有多久", countdown_today: "就是今天！",
     timeline_empty: "尚無活動紀錄。",
     visitors: "訪客數", privacy_policy: "隱私權政策",
     sec_privacy: "隱私權政策", privacy_subtitle: "本網站如何處理你的資訊",
@@ -78,6 +80,7 @@ const STRINGS = {
     sec_timeline: "活動年表", timeline_subtitle: "これまでの企画一覧",
     add_calendar: "カレンダーに追加", birthday_title: "轟はじめ お誕生日",
     countdown_title: "誕生日まであと", ongoing_subtitle: "現在実施中の応援企画",
+    nav_countdown: "カウントダウン", sec_countdown: "カウントダウン", countdown_subtitle: "大切な日まであと", countdown_today: "本日！",
     timeline_empty: "活動記録はまだありません。",
     visitors: "来訪者数", privacy_policy: "プライバシーポリシー",
     sec_privacy: "プライバシーポリシー", privacy_subtitle: "当サイトにおける情報の取り扱いについて",
@@ -109,6 +112,7 @@ const STRINGS = {
     sec_timeline: "Activity Timeline", timeline_subtitle: "A look back at past projects",
     add_calendar: "Add to calendar", birthday_title: "Todoroki Hajime's Birthday",
     countdown_title: "Countdown to Birthday", ongoing_subtitle: "Support projects happening now",
+    nav_countdown: "Countdown", sec_countdown: "Countdown", countdown_subtitle: "Countdowns to important days", countdown_today: "Today!",
     timeline_empty: "No activity records yet.",
     visitors: "Visitors", privacy_policy: "Privacy Policy",
     sec_privacy: "Privacy Policy", privacy_subtitle: "How this site handles your information",

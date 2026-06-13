@@ -2,6 +2,7 @@
 <!-- 網站地圖：幫助 Google 等搜尋引擎收錄。新增頁面時記得來這裡補一行 <url> -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yataty-gakuen.com/</loc></url>
+  <url><loc>https://yataty-gakuen.com/countdown.html</loc></url>
   <url><loc>https://yataty-gakuen.com/ongoing.html</loc></url>
   <url><loc>https://yataty-gakuen.com/timeline.html</loc></url>
   <url><loc>https://yataty-gakuen.com/posts.html</loc></url>

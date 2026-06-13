@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 倒數頁。事件資料：data/countdowns/ -->
+  <title>倒數計時｜やたてぃ学園はじめラ部</title>
+  <meta name="description" content="距離轟はじめ生日、はじめの日、出道紀念日等重要日子還有多久。" />
+  <meta property="og:title" content="倒數計時｜やたてぃ学園はじめラ部" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yataty-gakuen.com/countdown.html" />
+  <meta property="og:image" content="https://yataty-gakuen.com/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <section class="page-head">
+    <h1 data-i18n="sec_countdown"></h1>
+    <p data-i18n="countdown_subtitle"></p>
+  </section>
+
+  <div id="error-slot"></div>
+
+  <!-- 最近的：大倒數 -->
+  <section id="cd-main-section">
+    <div class="container countdown-wrap">
+      <div id="cd-main"></div>
+    </div>
+  </section>
+
+  <!-- 其餘：便利貼 -->
+  <section>
+    <div class="container">
+      <div id="cd-stickies" class="cd-stickies"></div>
+    </div>
+  </section>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/countdown.js"></script>
+</body>
+</html>

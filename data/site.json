@@ -102,5 +102,6 @@
     "provider": "abacus",
     "namespace": "yataty-gakuen-com",
     "key": "visits"
-  }
+  },
+  "debutDate": "2023-09-10"
 }
