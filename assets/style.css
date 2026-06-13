@@ -300,6 +300,11 @@ nav a:hover, nav a:focus-visible, nav a.active { border-bottom-color: var(--c-bo
 
 /* ===== 活動貼文卡片 ===== */
 .post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+
+/* 番長的回信：與貼文同網格，卡片加金色左框與標記，凸顯特別 */
+.reply-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+.reply-card { border-left: 5px solid var(--c-bolt); position: relative; }
+.reply-card .author { color: var(--c-bolt-deep); font-weight: 700; }
 .post-card {
   background: var(--c-white); border: 1px solid var(--c-silver);
   border-radius: var(--radius); overflow: hidden;
