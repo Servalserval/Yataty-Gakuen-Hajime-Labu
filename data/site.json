@@ -8,18 +8,27 @@
         "url": "https://x.com/hashtag/ぶんぶんばんちょー"
       },
       {
-        "label": "#はじめ武勇伝",
-        "url": "https://x.com/hashtag/はじめ武勇伝"
+        "label": "#轟はじめ生誕祭2026",
+        "url": "https://x.com/hashtag/轟はじめ生誕祭2026"
       }
     ]
   },
   "news": [
     {
-      "date": "2026-05-01",
+      "date": "2026-06-13",
       "title": {
         "zh": "應援企劃網站正式公開！",
         "ja": "応援企画サイトを公開しました！",
         "en": "Our support project website is now live!"
+      },
+      "url": ""
+    },
+    {
+      "date": "2026-06-01",
+      "title": {
+        "zh": "為慶祝轟はじめ的生日，我們在台北地下街舉辦了燈箱廣告與凹槽立牌廣告，並進行免費明信片發放，同時也在日本推出了 netprint 活動。",
+        "ja": "轟はじめの誕生日をお祝いして、台北地下街にてライトボックス広告と凹みスペースのパネル広告を掲出し、ポストカードの無料配布を行ったほか、日本ではネットプリント企画も実施しました。",
+        "en": "To celebrate Todoroki Hajime's birthday, we ran light box ads and panel ads in the Taipei Underground Mall, handed out free postcards, and also held a netprint campaign in Japan."
       },
       "url": ""
     }
