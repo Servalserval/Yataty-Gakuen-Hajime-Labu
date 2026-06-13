@@ -22,6 +22,30 @@
         "en": "Post on X" 
       }, 
       "url": "https://x.com/massugumi_babu/status/1929372650326925380?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特繪師貼文", 
+        "ja": "絵師さんポスト見る", 
+        "en": "View illustrator post on X" 
+      }, 
+      "url": "https://x.com/mui_maru/status/1929479022536523866?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "Cheering AD貼文", 
+        "ja": "Cheering ADポスト見る", 
+        "en": "View Cheering Ad post on X" 
+      }, 
+      "url": "https://x.com/jeki_ooh/status/1929839371080909267?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特設計師貼文", 
+        "ja": "デザイナーさんポスト見る", 
+        "en": "View designer post on X" 
+      }, 
+      "url": "https://x.com/mememerunn/status/1931130442792702076?s=20" 
     }
   ]
 }

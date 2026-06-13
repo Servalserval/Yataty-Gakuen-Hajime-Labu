@@ -1,49 +1,46 @@
 {
-  "cat": "netprint",
+  "cat": "poster",
   "name": { 
-    "zh": "生日紀念 netprint 配布（範例）", 
-    "ja": "記念ネットプリント配布（サンプル）", 
-    "en": "Commemorative Netprint (sample)" 
+    "zh": "生日紀念免費明信片配布", 
+    "ja": "誕生日記念無料ハガキ配布", 
+    "en": "Birthday Commemorative Netprint" 
   },
   "start": "2026-06-01",
   "end": "2026-06-30",
-  "images": [
-    "netprint-picture.jpeg", 
-    "netprint-qrcode.jpeg"
-  ],
+  "cover": "poster-photo.jpg",
   "hashtags": [
     "#はじめ生誕祭2026", 
     "#holocheer"
   ],
   "desc": {
-    "zh": "為紀念轟はじめ的生日，我們將應援廣告的插圖登錄到 netprint，無法到現場的人也能列印同樂！用戶編號 T7DZ4Z2537（印刷費自付）。台北地下街另有同款明信片免費發放。※僅限個人使用，請勿轉載、再散布或販售。",
-    "ja": "轟はじめ様のお誕生日を記念して、応援広告のイラストをネットワークプリントに登録しました。現地に来られない方もぜひ印刷してお楽しみください！ユーザー番号 T7DZ4Z2537（印刷料金は自己負担）。台北地下街では同デザインのポストカードを無料配布中。※個人利用の範囲でお楽しみください。再配布・転載・販売はご遠慮ください。",
-    "en": "To celebrate Todoroki Hajime's birthday, we've registered the support-ad illustration on netprint, so you can print it even if you can't visit in person! User number: T7DZ4Z2537 (printing fees apply). Free postcards of the same design are also available at the Taipei Underground Mall. *For personal use only — please do not redistribute, repost, or sell."
+    "zh": "為紀念轟はじめ生日應援廣告刊登，免費提供兩款紀念明信片索取！配布期間 2026/06/01～06/30，地點為台北地下街 Y19「44室 OP本舖」（店門口右側櫃子最右上方，編號 SF01），向店員說「我要 SF01 的兩張明信片各一份」即可。數量有限、發完為止，每人每款限一張，僅供個人收藏請勿轉售。無法到場者也可透過 ibon 雲端列印取得（詳見另一篇貼文）。",
+    "ja": "轟はじめ様の誕生日応援広告掲出を記念して、2種類の記念ポストカードを無料配布いたします！配布期間は2026/06/01〜06/30、場所は台北地下街Y19「44室 OP本舖」（店頭右側の棚・最上段右端、番号 SF01）。店員さんに「SF01のポストカードを各1枚ください」とお伝えください。数量限定・なくなり次第終了、お一人様各種1枚まで、個人での収集用のみ・転売はご遠慮ください。現地に来られない方は ibon クラウドプリントでも入手いただけます（詳細は別ポストをご覧ください）。",
+    "en": "To celebrate the Todoroki Hajime birthday support ad, we're giving away two kinds of commemorative postcards for free! Available June 1–30, 2026 at \"Room 44 OP Honpo\" (Y19), Taipei Underground Mall — top-right of the shelf on the right side of the entrance, code SF01. Just tell the staff you'd like \"one of each of the SF01 postcards.\" Limited quantity while supplies last; one of each per person; for personal collection only, no resale. Can't visit? You can also get them via ibon cloud printing (see our separate post)."
   },
   "links": [
-    { 
-      "label": { 
-        "zh": "可以印的地方", 
-        "ja": "印刷できるお店", 
-        "en": "Where you can print" 
-      }, 
-      "url": "https://networkprint.ne.jp/search_store/map.html?stype=ALL" 
-    },
-    { 
-      "label": { 
-        "zh": "推特設計師貼文", 
-        "ja": "デザイナーさんポスト見る", 
-        "en": "View designer post on X" 
-      }, 
-      "url": "https://x.com/mememerunn/status/2061313277389631497?s=20" 
-    },
     { 
       "label": { 
         "zh": "推特告知貼文", 
         "ja": "告知ポスト見る", 
         "en": "View announcement post on X" 
       }, 
-      "url": "https://x.com/massugumi_babu/status/2061116241306325208?s=20" 
+      "url": "https://x.com/massugumi_babu/status/2061116241562280363" 
+    },
+    { 
+      "label": { 
+        "zh": "推特繪師貼文", 
+        "ja": "絵師さんポスト見る", 
+        "en": "View illustrator post on X" 
+      }, 
+      "url": "https://x.com/ShirakabaMoga/status/2000769336252964896?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "花圈商店網站", 
+        "ja": "フラスタ専門店のサイト見る", 
+        "en": "View the site of the flower stand maker" 
+      }, 
+      "url": "https://www.instagram.com/jewelflower_shop?igsh=Nmk3cW5uNDVvNGR0" 
     }
   ]
 }
