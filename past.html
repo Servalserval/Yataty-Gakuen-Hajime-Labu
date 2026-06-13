@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 關於我們頁。內容資料：data/about.json -->
-  <title>關於我們｜やたてぃ学園はじめラ部</title>
-  <meta name="description" content="やたてぃ学園はじめラ部 是支持轟はじめ的非官方粉絲應援團體。介紹我們是誰、做什麼、如何參加。" />
-  <meta property="og:title" content="關於我們｜やたてぃ学園はじめラ部" />
+  <!-- 過去的企劃頁。資料來源：data/projects/（與主頁共用） -->
+  <title>過去的企劃｜やたてぃ学園はじめラ部</title>
+  <meta name="description" content="やたてぃ学園はじめラ部 歷年已結束的應援企劃。" />
+  <meta property="og:title" content="過去的企劃｜やたてぃ学園はじめラ部" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yataty-gakuen.com/about.html" />
+  <meta property="og:url" content="https://yataty-gakuen.com/past.html" />
   <meta property="og:image" content="https://yataty-gakuen.com/images/og-cover.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
@@ -21,19 +21,19 @@
 </head>
 <body>
   <section class="page-head">
-    <h1 data-i18n="sec_about"></h1>
-    <p data-i18n="about_subtitle"></p>
+    <h1 data-i18n="sec_past"></h1>
+    <p data-i18n="past_subtitle"></p>
   </section>
 
   <div id="error-slot"></div>
 
   <section>
-    <div class="container about-container">
-      <div id="about-root"></div>
+    <div class="container">
+      <div class="project-grid" id="past-grid"></div>
     </div>
   </section>
 
   <script src="assets/common.js"></script>
-  <script src="assets/about.js"></script>
+  <script src="assets/past.js"></script>
 </body>
 </html>

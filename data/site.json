@@ -100,7 +100,8 @@
   "visitorCounter": {
     "enabled": true,
     "provider": "abacus",
-    "namespace": "todoroki-hajime-com",
+    "namespace": "yataty-gakuen-com",
     "key": "visits"
-  }
+  },
+  "debutDate": "2023-09-10"
 }

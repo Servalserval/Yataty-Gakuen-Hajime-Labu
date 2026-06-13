@@ -4,6 +4,8 @@
 
 ```
 ├── index.html          首頁（Hero、公告、企劃）
+├── countdown.html      倒數計時頁
+├── past.html           過去的企劃頁
 ├── timeline.html       活動年表頁
 ├── fanart.html         ファンアート頁
 ├── about.html          關於我們頁
@@ -15,6 +17,8 @@
 │   ├── style.css         全站樣式（改配色在這檔最上面的 :root）
 │   ├── common.js         共用：導覽列、頁尾、語言、燈箱、介面文字
 │   ├── home.js           首頁程式
+│   ├── countdown.js      倒數頁程式
+│   ├── past.js           過去的企劃頁程式
 │   ├── timeline.js       年表頁程式（讀企劃資料自動產生）
 │   ├── fanart.js         ファンアート頁程式
 │   ├── about.js          關於我們頁程式
@@ -134,4 +138,24 @@ python3 -m http.server
 
 ## sitemap.xml / robots.txt
 `sitemap.xml` 列出所有頁面供搜尋引擎收錄；`robots.txt` 指向它。★ 新增「頁面」（html）時記得到 sitemap.xml 補一行 <url>；新增企劃／貼文不用動它。
-部署後可到 Google Search Console 提交 https://todoroki-hajime.com/sitemap.xml 加速收錄。
+部署後可到 Google Search Console 提交 https://yataty-gakuen.com/sitemap.xml 加速收錄。
+
+
+## 頁面結構說明（v5 後續調整）
+- 首頁（index.html）：Hero 標題 → 「到生日還有多久」倒數區塊 → 公告 → 前往進行中企劃的入口 → 過去的企劃。
+- 進行中的企劃顯示在首頁；過去的企劃獨立成 `past.html`。
+- 生日倒數邏輯（以日本時間）：今年生日已過 → 倒數到明年；生日當天 → 顯示「生日當天」不倒數；隔天起 → 倒數到再下一年。
+- 企劃卡的共用程式（buildProjectCard / isPast / loadProjects / periodText）已集中到 `common.js`，首頁、進行中頁、年表頁共用，改一處即全站生效。
+
+
+## 倒數計時（countdown.html）
+事件放在 `data/countdowns/`，每個事件一個 json，並登記到 `data/countdowns/_list.json`（與企劃同模式）。
+最近的事件用大倒數顯示，其餘做成便利貼貼在下面；新增事件＝加一個 json ＋ 在 _list.json 補一行。
+
+每個事件的日期三選一：
+- `"monthDay": "06-07"` → 每年循環（過了換明年；當天顯示「就是今天」）
+- `"daysAfterDebut": 1111` → 一次性，從 `data/site.json` 的 `debutDate` ＋N 天算出
+- `"date": "2025-12-16"` → 一次性，固定日期
+
+一次性且已過的事件會自動隱藏。
+> ⚠️ `data/site.json` 的 `debutDate` 目前填 2023-09-10，**請確認轟はじめ正確的出道日**，否則「出道後第幾天」類的倒數會算錯。
