@@ -1,6 +1,8 @@
 {
   "illustrators": [
-    { "name": "あずまのひかり🌅", "handle": "@Sunrise_East2", "image": "images/staff/Sunrise_East2.jpg", "url": "https://x.com/Sunrise_East2" }
+    { "name": "あずまのひかり🌅", "handle": "@Sunrise_East2", "image": "images/staff/Sunrise_East2.jpg", "url": "https://x.com/Sunrise_East2" },
+    { "name": "白椛モガ︎", "handle": "@ShirakabaMoga", "image": "images/staff/ShirakabaMoga.jpg", "url": "https://x.com/ShirakabaMoga" },
+    { "name": "muiまる", "handle": "@mui_maru", "image": "images/staff/mui_maru.jpg", "url": "https://x.com/mui_maru" }
   ],
   "designers": [
     { "name": "兎卵メルꕤDesign", "handle": "@mememerunn", "image": "images/staff/mememerunn.jpg", "url": "https://x.com/mememerunn" }
@@ -8,6 +10,9 @@
   "members": [
     { "name": "やたてぃ学園はじめラ部", "handle": "@yataty_gakuen", "image": "images/staff/yataty_gakuen.jpg", "url": "https://x.com/massugumi_babu" },
     { "name": "エリートベービャー", "handle": "@elite_babya", "image": "images/staff/elite_babya.jpg", "url": "https://x.com/elite_babya" },
-    { "name": "てらぴ", "handle": "@terapi", "image": "images/staff/terapi.webp", "url": "https://x.com/bancho_sukya_os" }
+    { "name": "てらぴ", "handle": "@terapi", "image": "images/staff/terapi.webp", "url": "https://x.com/bancho_sukya_os" },
+    { "name": "そりそり", "handle": "@sorisori", "image": "images/staff/Sorisori.jpg", "url": "https://x.com/ClisT_epic7" },
+    { "name": "ヒトマ", "handle": "@hitoma", "image": "images/staff/Hitoma.jpg", "url": "https://x.com/hitoma_tan12" },
+    { "name": "ぽー", "handle": "@po", "image": "images/staff/po.jpg", "url": "https://x.com/uchibankookanan" }
   ]
 }
