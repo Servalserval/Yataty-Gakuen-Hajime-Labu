@@ -1,16 +1,49 @@
 {
   "cat": "netprint",
-  "name": { "zh": "生日紀念 netprint 配布（範例）", "ja": "記念ネットプリント配布（サンプル）", "en": "Commemorative Netprint (sample)" },
+  "name": { 
+    "zh": "生日紀念 netprint 配布（範例）", 
+    "ja": "記念ネットプリント配布（サンプル）", 
+    "en": "Commemorative Netprint (sample)" 
+  },
   "start": "2026-06-01",
-  "end": "2026-06-08",
-  "cover": "cover.jpg",
-  "hashtags": ["#はじめ生誕祭2026"],
+  "end": "2026-06-30",
+  "images": [
+    "netprint-picture.jpeg", 
+    "netprint-qrcode.jpeg"
+  ],
+  "hashtags": [
+    "#はじめ生誕祭2026", 
+    "#holocheer"
+  ],
   "desc": {
-    "zh": "於日本超商多功能事務機輸入預約番號即可列印紀念圖卡。番號：12345678（範例）。",
-    "ja": "コンビニのマルチコピー機で予約番号を入力すると記念カードを印刷できます。予約番号：12345678（サンプル）。",
-    "en": "Enter the reservation number at a Japanese convenience-store multi-copy machine to print a commemorative card. Number: 12345678 (sample)."
+    "zh": "為紀念轟はじめ的生日，我們將應援廣告的插圖登錄到 netprint，無法到現場的人也能列印同樂！用戶編號 T7DZ4Z2537（印刷費自付）。台北地下街另有同款明信片免費發放。※僅限個人使用，請勿轉載、再散布或販售。",
+    "ja": "轟はじめ様のお誕生日を記念して、応援広告のイラストをネットワークプリントに登録しました。現地に来られない方もぜひ印刷してお楽しみください！ユーザー番号 T7DZ4Z2537（印刷料金は自己負担）。台北地下街では同デザインのポストカードを無料配布中。※個人利用の範囲でお楽しみください。再配布・転載・販売はご遠慮ください。",
+    "en": "To celebrate Todoroki Hajime's birthday, we've registered the support-ad illustration on netprint, so you can print it even if you can't visit in person! User number: T7DZ4Z2537 (printing fees apply). Free postcards of the same design are also available at the Taipei Underground Mall. *For personal use only — please do not redistribute, repost, or sell."
   },
   "links": [
-    { "label": { "zh": "列印教學", "ja": "印刷方法", "en": "How to print" }, "url": "https://x.com/massugumi_babu" }
+    { 
+      "label": { 
+        "zh": "可以印的地方", 
+        "ja": "印刷できるお店", 
+        "en": "Where you can print" 
+      }, 
+      "url": "https://networkprint.ne.jp/search_store/map.html?stype=ALL" 
+    },
+    { 
+      "label": { 
+        "zh": "推特設計師貼文", 
+        "ja": "デザイナーさんポスト見る", 
+        "en": "View designer post on X" 
+      }, 
+      "url": "https://x.com/mememerunn/status/2061313277389631497?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特告知貼文", 
+        "ja": "告知ポスト見る", 
+        "en": "View announcement post on X" 
+      }, 
+      "url": "https://x.com/massugumi_babu/status/2061116241306325208?s=20" 
+    }
   ]
 }

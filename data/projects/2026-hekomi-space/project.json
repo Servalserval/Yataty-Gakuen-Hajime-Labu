@@ -1,0 +1,57 @@
+{
+  "cat": "ad",
+  "name": {
+    "zh": "生日應援凹槽廣告",
+    "ja": "誕生日応援凹みスペース広告",
+    "en": "Birthday Support Alcove Ad"
+  },
+  "start": "2026-06-01",
+  "end": "2026-12-30",
+  "images": [
+    "2026_Hekomi_Space_ad_jp.jpeg", 
+    "2026_06_Hekomi_Space_Genchi.jpeg"
+  ],
+  "hashtags": [
+    "#はじめ生誕祭2026", 
+    "#holocheer"
+  ],
+  "desc": {
+    "zh": "為紀念轟はじめ的生日，應援廣告於台北地下街 1 號廣場附近展出中！本展為 2026 年 6 月～12 月的長期企劃，每月更換不同主題的看板。",
+    "ja": "轟はじめ様のお誕生日を記念した応援広告を、台北地下街1番広場付近にて掲出中！2026年6月〜12月の長期企画で、毎月テーマの異なるパネルを展示します。",
+    "en": "A support ad celebrating Todoroki Hajime's birthday is now on display near Plaza 1 of the Taipei Underground Mall! Running June–December 2026, it features a different themed panel each month."
+  },
+  "links": [
+    { 
+      "label": { 
+        "zh": "推特實地貼文", 
+        "ja": "現地ポスト見る", 
+        "en": "View on-site post on X" 
+      }, 
+      "url": "https://x.com/massugumi_babu/status/2061116493505483243?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特告知貼文", 
+        "ja": "告知ポスト見る", 
+        "en": "View announcement post on X" 
+      }, 
+      "url": "https://x.com/massugumi_babu/status/2061115493147414737?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特繪師貼文", 
+        "ja": "絵師さんポスト見る", 
+        "en": "View illustrator post on X" 
+      }, 
+      "url": "https://x.com/Sunrise_East2/status/2062836839254200498?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特設計師貼文", 
+        "ja": "デザイナーさんポスト見る", 
+        "en": "View designer post on X" 
+      }, 
+      "url": "https://x.com/mememerunn/status/2061309781768593684?s=20" 
+    }
+  ]
+}
