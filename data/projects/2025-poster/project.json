@@ -1,14 +1,14 @@
 {
-  "cat": "postcard",
-  "name": { "zh": "免費明信片配布（去年・範例）", "ja": "ポストカード無料配布（昨年・サンプル）", "en": "Free Postcard Giveaway (last year, sample)" },
-  "start": "2025-06-01",
-  "end": "2025-06-07",
-  "cover": "cover.jpg",
+  "cat": "station-ad",
+  "name": { "zh": "2025 轟はじめ誕生日応援広告", "ja": "2025 轟はじめ誕生日応援広告", "en": "2025 Todoroki Hajime Birthday Celebration Advertisement" },
+  "start": "2025-06-02",
+  "end": "2025-06-08",
+  "images": ["2025_05_Poster_ad.jpeg", "2025_05_Penguin_Looking_at_Ad.jpeg"],
   "hashtags": [],
   "desc": {
-    "zh": "去年生誕祭的免費紀念明信片配布活動，感謝大家的參與！",
-    "ja": "昨年の生誕祭で行ったポストカード無料配布企画。ご参加ありがとうございました！",
-    "en": "Last year's free commemorative postcard giveaway. Thank you all for joining!"
+    "zh": "為慶祝轟はじめ的生日，我們在東京 Metro 秋葉原站刊登了應援廣告！",
+    "ja": "轟はじめ様のお誕生日祝いに東京メトロ秋葉原駅にて応援広告を掲出いたしました！",
+    "en": "To celebrate Todoroki Hajime's birthday, we put up a support ad at Akihabara Station on the Tokyo Metro!"
   },
   "links": []
 }
