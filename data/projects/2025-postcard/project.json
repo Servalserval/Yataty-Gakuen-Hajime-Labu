@@ -1,13 +1,14 @@
 {
   "cat": "postcard",
-  "name": { "zh": "免費明信片配布（去年・範例）", "ja": "ポストカード無料配布（昨年・サンプル）" },
+  "name": { "zh": "免費明信片配布（去年・範例）", "ja": "ポストカード無料配布（昨年・サンプル）", "en": "Free Postcard Giveaway (last year, sample)" },
   "start": "2025-06-01",
   "end": "2025-06-07",
   "cover": "cover.jpg",
   "hashtags": [],
   "desc": {
     "zh": "去年生誕祭的免費紀念明信片配布活動，感謝大家的參與！",
-    "ja": "昨年の生誕祭で行ったポストカード無料配布企画。ご参加ありがとうございました！"
+    "ja": "昨年の生誕祭で行ったポストカード無料配布企画。ご参加ありがとうございました！",
+    "en": "Last year's free commemorative postcard giveaway. Thank you all for joining!"
   },
   "links": []
 }

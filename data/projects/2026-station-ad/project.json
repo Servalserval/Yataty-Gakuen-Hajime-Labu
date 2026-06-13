@@ -1,16 +1,17 @@
 {
   "cat": "ad",
-  "name": { "zh": "生誕祭應援廣告（範例，請替換）", "ja": "誕生日応援広告（サンプル）" },
+  "name": { "zh": "生誕祭應援廣告（範例，請替換）", "ja": "誕生日応援広告（サンプル）", "en": "Birthday Support Ad (sample)" },
   "start": "2026-05-20",
   "end": "2026-06-14",
-  "cover": "cover.jpg",
+  "images": ["ad-1.jpg", "ad-2.jpg", "ad-3.jpg"],
   "hashtags": ["#はじめ生誕祭2026", "#ぶんぶんばんちょー"],
   "desc": {
-    "zh": "於○○車站刊登轟はじめ生日應援廣告！歡迎前往拍「認證照」，附上活動 hashtag 分享。",
-    "ja": "○○駅にて轟はじめ誕生日応援広告を掲出！認証ショットを撮って、ハッシュタグ付きでぜひシェアしてください。"
+    "zh": "於○○車站刊登轟はじめ生日應援廣告！這段較長的說明預設只會顯示前三行，點「展開更多」就能看完整內容。歡迎大家前往拍認證照，並附上活動 hashtag 一起分享，讓更多人看到番長的生日應援！廣告刊登期間有限，把握機會喔。",
+    "ja": "○○駅にて轟はじめ誕生日応援広告を掲出！この説明は最初の3行だけ表示され、「もっと見る」で全文が読めます。認証ショットを撮ってハッシュタグ付きでシェアしてください。掲出期間は限られていますのでお見逃しなく！",
+    "en": "A birthday support ad for Todoroki Hajime at ○○ Station! This longer description only shows the first three lines by default — tap \"Read more\" for the full text. Come take a commemorative photo and share it with the campaign hashtags so more people can see the Bancho's birthday support! The display period is limited, so don't miss it."
   },
   "links": [
-    { "label": { "zh": "刊登位置地圖", "ja": "掲出場所マップ" }, "url": "https://maps.app.goo.gl/xxxx" },
-    { "label": { "zh": "相關推文", "ja": "告知ポスト" }, "url": "https://x.com/massugumi_babu" }
+    { "label": { "zh": "刊登位置地圖", "ja": "掲出場所マップ", "en": "Location map" }, "url": "https://maps.app.goo.gl/xxxx" },
+    { "label": { "zh": "相關推文", "ja": "告知ポスト", "en": "Announcement post" }, "url": "https://x.com/massugumi_babu" }
   ]
 }

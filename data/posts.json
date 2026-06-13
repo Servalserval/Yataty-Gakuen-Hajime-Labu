@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://x.com/massugumi_babu/status/0000000000000000000",
+    "date": "2026-05-10",
+    "author": "@massugumi_babu",
+    "image": "images/posts/post-1.jpg",
+    "text": {
+      "zh": "【應援廣告情報公開】這次的生誕祭，我們將在○○車站刊登轟はじめ的生日應援廣告！這段內文也是預設只顯示三行，超過的部分點展開就能看完。詳細的刊登位置與期間請見首頁的企劃介紹，歡迎大家一起來拍認證照、用 hashtag 分享～",
+      "ja": "【応援広告情報公開】今回の生誕祭では○○駅に轟はじめの誕生日応援広告を掲出します！この本文もデフォルトでは3行だけ表示され、続きは「もっと見る」で読めます。掲出場所と期間はトップの企画紹介をご覧ください。",
+      "en": "[Support Ad Announcement] For this birthday, we're displaying a Todoroki Hajime support ad at ○○ Station! This text also shows only three lines by default — tap to read the rest. See the project section on the home page for the exact location and dates."
+    }
+  },
+  {
+    "url": "https://x.com/massugumi_babu/status/0000000000000000001",
+    "date": "2026-04-20",
+    "author": "@massugumi_babu",
+    "text": {
+      "zh": "寄せ書き募集開始了！這則貼文沒有附圖，卡片會自動只顯示文字。把對はじめ的祝福寫進表單吧。",
+      "ja": "寄せ書きの募集を開始しました！この投稿には画像がないので、カードはテキストのみ表示されます。",
+      "en": "Group message collection has started! This post has no image, so the card shows text only. Write your wishes for Hajime in the form."
+    }
+  }
+]

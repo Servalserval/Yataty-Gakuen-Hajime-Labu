@@ -1,15 +1,16 @@
 {
   "cat": "netprint",
-  "name": { "zh": "生日紀念 netprint 配布（範例）", "ja": "記念ネットプリント配布（サンプル）" },
+  "name": { "zh": "生日紀念 netprint 配布（範例）", "ja": "記念ネットプリント配布（サンプル）", "en": "Commemorative Netprint (sample)" },
   "start": "2026-06-01",
   "end": "2026-06-08",
   "cover": "cover.jpg",
   "hashtags": ["#はじめ生誕祭2026"],
   "desc": {
     "zh": "於日本超商多功能事務機輸入預約番號即可列印紀念圖卡。番號：12345678（範例）。",
-    "ja": "コンビニのマルチコピー機で予約番号を入力すると記念カードを印刷できます。予約番号：12345678（サンプル）。"
+    "ja": "コンビニのマルチコピー機で予約番号を入力すると記念カードを印刷できます。予約番号：12345678（サンプル）。",
+    "en": "Enter the reservation number at a Japanese convenience-store multi-copy machine to print a commemorative card. Number: 12345678 (sample)."
   },
   "links": [
-    { "label": { "zh": "列印教學", "ja": "印刷方法" }, "url": "https://x.com/massugumi_babu" }
+    { "label": { "zh": "列印教學", "ja": "印刷方法", "en": "How to print" }, "url": "https://x.com/massugumi_babu" }
   ]
 }

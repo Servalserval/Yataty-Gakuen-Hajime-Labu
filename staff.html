@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 人員名單頁。內容資料：data/staff.json -->
+  <title>人員名單｜やたてぃ学園はじめラ部</title>
+  <meta name="description" content="やたてぃ学園はじめラ部のメンバー紹介（繪師・設計師・成員）。" />
+  <meta property="og:title" content="人員名單｜やたてぃ学園はじめラ部" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://todoroki-hajime.com/staff.html" />
+  <meta property="og:image" content="https://todoroki-hajime.com/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <section class="page-head">
+    <h1 data-i18n="sec_staff"></h1>
+    <p data-i18n="staff_subtitle"></p>
+  </section>
+
+  <div id="error-slot"></div>
+
+  <section>
+    <div class="container">
+      <div id="staff-root"></div>
+    </div>
+  </section>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/staff.js"></script>
+</body>
+</html>

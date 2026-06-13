@@ -1,0 +1,14 @@
+{
+  "illustrators": [
+    { "name": "繪師A（範例）", "handle": "@artist_a", "image": "images/staff/artist-a.jpg", "url": "https://x.com/artist_a" },
+    { "name": "繪師B（範例）", "handle": "@artist_b", "image": "images/staff/artist-b.jpg", "url": "https://x.com/artist_b" }
+  ],
+  "designers": [
+    { "name": "設計師C（範例）", "handle": "@designer_c", "image": "images/staff/designer-c.jpg", "url": "https://x.com/designer_c" }
+  ],
+  "members": [
+    { "name": "主辦・ばぶ", "handle": "@massugumi_babu", "image": "images/staff/babu.jpg", "url": "https://x.com/massugumi_babu" },
+    { "name": "成員D（範例）", "handle": "@member_d", "image": "images/staff/member-d.jpg", "url": "https://x.com/member_d" },
+    { "name": "成員E（範例）", "handle": "@member_e", "image": "images/staff/member-e.jpg", "url": "https://x.com/member_e" }
+  ]
+}
