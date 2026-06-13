@@ -1,0 +1,30 @@
+{
+  "cat": "flower-stand",
+  "name": {
+    "zh": "ReGLOSS 1st Live 開催祝賀花籃",
+    "ja": "ReGLOSS1stライブ開催祝いフラワースタンド",
+    "en": "ReGLOSS 1st Live Celebration Flower Stand"
+  },
+  "start": "2025-12-16",
+  "end": "2025-12-16",
+  "cover": "2025_12_Flower_Stand.jpeg",
+  "hashtags": [
+    "#みてみてばんちょー",
+    "#ReGLOSS_1stLive"
+  ],
+  "desc": {
+    "zh": "為慶祝 ReGLOSS 1st Live 開演，我們冒昧地向轟はじめ獻上了一座花籃。",
+    "ja": "ReGLOSS1stライブ開催を祝して、僭越ながら轟はじめ様へフラワースタンドを送らせていただきました。",
+    "en": "To celebrate the ReGLOSS 1st Live, we humbly sent a flower stand to Todoroki Hajime."
+  },
+  "links": [
+    {
+      "label": {
+        "zh": "推特貼文",
+        "ja": "ポストを見る",
+        "en": "Post on X"
+      },
+      "url": "https://x.com/massugumi_babu/status/2000728007187816613"
+    }
+  ]
+}

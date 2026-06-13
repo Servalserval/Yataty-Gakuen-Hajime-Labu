@@ -42,6 +42,14 @@
       },
       "color": "#ffd028"
     },
+    "flower-stand": {
+      "label": {
+        "zh": "花籃應援",
+        "ja": "フラワースタンド",
+        "en": "Flower Stand"
+      },
+      "color": "#f6a5c0"
+    },
     "netprint": {
       "label": {
         "zh": "netprint",
