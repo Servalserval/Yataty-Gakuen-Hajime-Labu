@@ -1,6 +1,8 @@
 {
   "illustrators": [
-    { "name": "あずまのひかり🌅", "handle": "@Sunrise_East2", "image": "images/staff/Sunrise_East2.jpg", "url": "https://x.com/Sunrise_East2" }
+    { "name": "あずまのひかり🌅", "handle": "@Sunrise_East2", "image": "images/staff/Sunrise_East2.jpg", "url": "https://x.com/Sunrise_East2" },
+    { "name": "白椛モガ︎", "handle": "@ShirakabaMoga", "image": "images/staff/ShirakabaMoga.jpg", "url": "https://x.com/ShirakabaMoga" },
+    { "name": "muiまる", "handle": "@mui_maru", "image": "images/staff/mui_maru.jpg", "url": "https://x.com/mui_maru" }
   ],
   "designers": [
     { "name": "兎卵メルꕤDesign", "handle": "@mememerunn", "image": "images/staff/mememerunn.jpg", "url": "https://x.com/mememerunn" }
