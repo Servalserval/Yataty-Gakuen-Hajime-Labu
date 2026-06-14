@@ -12,6 +12,7 @@ const STAFF_SECTIONS = [
   { key: "illustrators", label: "staff_illustrators" },
   { key: "designers",    label: "staff_designers" },
   { key: "members",      label: "staff_members" },
+  { key: "mascot",       label: "staff_mascot" }
 ];
 
 function buildStaffCard(person) {

@@ -14,5 +14,8 @@
     { "name": "そりそり", "handle": "@sorisori", "image": "images/staff/Sorisori.jpg", "url": "https://x.com/ClisT_epic7" },
     { "name": "ヒトマ", "handle": "@hitoma", "image": "images/staff/Hitoma.jpg", "url": "https://x.com/hitoma_tan12" },
     { "name": "ぽー", "handle": "@po", "image": "images/staff/po.jpg", "url": "https://x.com/uchibankookanan" }
+  ],
+  "mascot": [
+    { "name": "紫煙濃霧のTaMa", "handle": "@tama", "image": "images/staff/Tama.jpg", "url": "https://x.com/BUNx2_ShienTaMa" }
   ]
 }
