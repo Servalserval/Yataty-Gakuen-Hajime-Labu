@@ -1,0 +1,41 @@
+{
+  "cat": "ad",
+  "name": {
+    "zh": "八月凹槽廣告",
+    "ja": "八月凹みスペース広告",
+    "en": "August Alcove Ad"
+  },
+  "start": "2026-08-01",
+  "end": "2026-08-31",
+  "images": [
+    "2026_08_Hekomi_Space_Bancho.jpg",
+    "2026_08_Hekomi_Space_Mini_Bancho.jpg",
+    "2026_08_Hekomi_Space_Zentai.jpeg"
+  ],
+  "hashtags": [
+    "#みてみてばんちょー"
+  ],
+  "desc": {
+    "zh": "台北地下街應援看板已更換為 8 月主題「Holo 夏日」！",
+    "ja": "台北地下街の応援パネルを8月テーマ「ホロ夏」に更新しました！",
+    "en": "The support panel at Taipei Underground Mall has been updated to July's \"Holo Summer\" theme!"
+  },
+  "links": [
+    { 
+      "label": { 
+        "zh": "推特實地貼文", 
+        "ja": "現地ポスト見る", 
+        "en": "View on-site post on X" 
+      }, 
+      "url": "https://x.com/massugumi_babu/status/2083157643582218507?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特繪師貼文", 
+        "ja": "絵師さんポスト見る", 
+        "en": "View illustrator post on X" 
+      }, 
+      "url": "https://x.com/Sunrise_East2/status/2083531668015771801?s=20" 
+    }
+  ]
+}
