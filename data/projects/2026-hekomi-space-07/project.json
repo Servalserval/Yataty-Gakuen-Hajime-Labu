@@ -1,0 +1,43 @@
+{
+  "cat": "ad",
+  "name": {
+    "zh": "七月凹槽廣告",
+    "ja": "七月凹みスペース広告",
+    "en": "July Alcove Ad"
+  },
+  "start": "2026-07-01",
+  "end": "2026-07-31",
+  "images": [
+    "2026_07_Hekomi_Space_Bancho.jpg",
+    "2026_07_Hekomi_Space_Mini_Bancho.jpg",
+    "2026_07_Hekomi_Space_Zentai.jpeg"
+  ],
+  "hashtags": [
+    "#みてみてばんちょー", 
+    "#はじめ生誕祭2026", 
+    "#holocheer"
+  ],
+  "desc": {
+    "zh": "台北地下街應援看板已更換為 7 月主題「dunk」！",
+    "ja": "台北地下街の応援パネルを7月テーマ「dunk」に更新しました！",
+    "en": "The support panel at Taipei Underground Mall has been updated to July's \"dunk\" theme!"
+  },
+  "links": [
+    { 
+      "label": { 
+        "zh": "推特實地貼文", 
+        "ja": "現地ポスト見る", 
+        "en": "View on-site post on X" 
+      }, 
+      "url": "https://x.com/massugumi_babu/status/2071957045293830328?s=20" 
+    },
+    { 
+      "label": { 
+        "zh": "推特繪師貼文", 
+        "ja": "絵師さんポスト見る", 
+        "en": "View illustrator post on X" 
+      }, 
+      "url": "https://x.com/Sunrise_East2/status/2072648577365803264?s=20" 
+    }
+  ]
+}
