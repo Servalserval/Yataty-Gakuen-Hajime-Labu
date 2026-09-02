@@ -1,0 +1,32 @@
+{
+  "cat": "ad",
+  "name": {
+    "zh": "九月凹槽廣告",
+    "ja": "九月凹みスペース広告",
+    "en": "September Alcove Ad"
+  },
+  "start": "2026-09-01",
+  "end": "2026-09-30",
+  "images": [
+    "2026_09_Hekomi_Space.jpeg",
+    "2026_09_Hekomi_Space_Close.jpeg"
+  ],
+  "hashtags": [
+    "#みてみてばんちょー"
+  ],
+  "desc": {
+    "zh": "台北地下街應援看板已更換為 9 月主題「ReGLOSS 3週年」！",
+    "ja": "台北地下街の応援パネルを9月テーマ「リグロス 3周年」に更新しました！",
+    "en": "The support panel at Taipei Underground Mall has been updated to September's \"ReGLOSS 3rd Aniversary\" theme!"
+  },
+  "links": [
+    { 
+      "label": { 
+        "zh": "推特實地貼文", 
+        "ja": "現地ポスト見る", 
+        "en": "View on-site post on X" 
+      }, 
+      "url": "https://x.com/massugumi_babu/status/2094687442846572726?s=20"
+    }
+  ]
+}
