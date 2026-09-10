@@ -1,0 +1,34 @@
+{
+  "cat": "postcard",
+  "name": {
+    "zh": "ReGLOSS 3週年紀念明信片免費配布",
+    "ja": "ReGLOSS 3周年記念ポストカード無料配布",
+    "en": "ReGLOSS 3rd Anniversary Postcard Giveaway"
+  },
+  "start": "2026-09-09",
+  "end": "2026-10-15",
+  "images": [
+    "2026_09_ReGLOSS_3rd_Postcard.jpg",
+    "2026_09_ReGLOSS_3rd_Postcard_Genchi.jpg"
+  ],
+  "hashtags": [
+    "#ReGLOSS",
+    "#ReGLOSS3周年",
+    "#holocheer"
+  ],
+  "desc": {
+    "zh": "為紀念 ReGLOSS 三週年，在台北地下街 Y19「44室 OP本舖」免費配布紀念明信片（編號 SF01）。番長生日的兩款也持續配布中，數量有限、發完為止。",
+    "ja": "ReGLOSS 3周年を記念して、台北地下街 Y19「44室 OP本舖」にて記念ポストカードを無料配布中です（番号 SF01）。ばんちょーのお誕生日記念2種も引き続き配布中。数量限定・なくなり次第終了です。",
+    "en": "Free commemorative postcards for ReGLOSS's 3rd anniversary at Room 44 OP Honpo (Y19), Taipei Underground Mall — code SF01. The two birthday postcards are still available too. Limited quantity, while supplies last."
+  },
+  "links": [
+    {
+      "label": {
+        "zh": "推特告知貼文",
+        "ja": "告知ポスト見る",
+        "en": "View announcement post on X"
+      },
+      "url": "https://x.com/massugumi_babu/status/2097343975493620034"
+    }
+  ]
+}
