@@ -6,6 +6,11 @@
 
 let PROJECTS = [];
 
+/* 首頁「最新公告」最多顯示幾則。
+   ★ 舊的公告不用刪，全部留在 data/site.json 裡，只是首頁不顯示，
+     日期較新的會自動排到前面。想多顯示幾則就改這個數字。 */
+const NEWS_LIMIT = 5;
+
 function renderHome() {
   document.querySelectorAll("[data-i18n]").forEach(node => {
     const key = node.getAttribute("data-i18n");
@@ -30,15 +35,18 @@ function renderHome() {
     heroTags.append(el("a", { href: tg.url, target: "_blank", rel: "noopener" }, tg.label));
   });
 
-  // 公告
+  // 公告：日期新的排前面，只顯示最新的 NEWS_LIMIT 則（其餘仍保留在 site.json）
   const newsList = document.getElementById("news-list");
   newsList.textContent = "";
-  (Site.SITE.news ?? []).forEach(n => {
-    const li = el("li");
-    li.append(el("span", { class: "news-date" }, n.date));
-    li.append(n.url ? el("a", { href: n.url }, t(n.title)) : el("span", {}, t(n.title)));
-    newsList.append(li);
-  });
+  [...(Site.SITE.news ?? [])]
+    .sort((a, b) => ((a.date ?? "") < (b.date ?? "") ? 1 : -1))
+    .slice(0, NEWS_LIMIT)
+    .forEach(n => {
+      const li = el("li");
+      li.append(el("span", { class: "news-date" }, n.date));
+      li.append(n.url ? el("a", { href: n.url }, t(n.title)) : el("span", {}, t(n.title)));
+      newsList.append(li);
+    });
 
   // 前往「進行中的企劃」頁的入口按鈕文字
   // 進行中的企劃（卡片直接顯示在主頁；過去的企劃在 past.html）

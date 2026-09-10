@@ -45,7 +45,8 @@
 ## 平常會做的事
 
 ### 改公告 / Hero / 頁尾 → `data/site.json`
-- 公告：`news`（新的放最上面）
+- 公告：`news`（依 `date` 自動排序，新的會排到最上面）
+  > 首頁只顯示**最新的 5 則**，舊的不用刪、全部留在 `site.json` 裡即可。想改顯示則數：`assets/home.js` 最上面的 `NEWS_LIMIT`。
 - 生日日期、主視覺 fanart、hashtag：`hero`
 - 免責聲明、社群連結：`footer`
 
