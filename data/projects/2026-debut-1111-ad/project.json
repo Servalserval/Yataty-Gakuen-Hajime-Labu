@@ -1,0 +1,32 @@
+{
+  "cat": "ad",
+  "name": {
+    "zh": "出道 1111 天紀念應援廣告",
+    "ja": "デビュー1111日記念応援広告",
+    "en": "Debut Day 1111 Support Ad"
+  },
+  "start": "2026-09-21",
+  "end": "2026-09-27",
+  "images": [
+    "2026_09_Debut_1111_Ad.jpg"
+  ],
+  "hashtags": [
+    "#みてみてばんちょー",
+    "#holocheer"
+  ],
+  "desc": {
+    "zh": "為紀念轟はじめ出道第 1111 天，在東京 Metro 日比谷線秋葉原站 B1F（JR 秋葉原站方向剪票口附近）刊登應援廣告。",
+    "ja": "轟はじめ様の活動開始1111日目を記念して、東京メトロ日比谷線秋葉原駅 B1F（JR秋葉原駅方面改札付近）に応援広告を掲出。",
+    "en": "To mark Todoroki Hajime's 1111th day since debut, a support ad at Tokyo Metro Hibiya Line Akihabara Station, B1F (near the JR Akihabara gate)."
+  },
+  "links": [
+    {
+      "label": {
+        "zh": "推特告知貼文",
+        "ja": "告知ポスト見る",
+        "en": "View announcement post on X"
+      },
+      "url": "https://x.com/massugumi_babu/status/2102181463051620732"
+    }
+  ]
+}
